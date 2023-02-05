@@ -4,6 +4,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+    "node_modules/preline/dist/*.js",
 
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -23,5 +24,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms"), require("preline/plugin")],
 };
