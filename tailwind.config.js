@@ -9,6 +9,18 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      primary: "#F3A311",
+      "primary-light": "#FFF9E7",
+      "primary-footer": "#FBDE4D",
+      white: "#FFFFFF",
+      black: "#000000",
+      secondary: "#756BEE",
+    },
+    fontFamily: {
+      sans: ['"Josefin Sans"', "sans-serif"],
+      serif: ['"Poppins"', "sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
