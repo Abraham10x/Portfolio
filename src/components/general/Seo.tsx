@@ -78,10 +78,6 @@ const Seo: FC<SeoProps> = (props: SeoProps) => {
         content="/favicon/ms-icon-144x144.png"
       />
       <meta name="theme-color" content="#ffffff" />
-      <link
-        href="https://fonts.cdnfonts.com/css/cabinet-grotesk"
-        rel="stylesheet"
-      />
     </Head>
   );
 };

@@ -28,7 +28,7 @@ const Form: FC = () => {
             type="text"
             id="name-input"
             placeholder="Queen"
-            className="bg-gray-50 border border-[#A9C5DE] shadow-sm text-gray-900 text-sm sm:text-base rounded-md focus:ring-secondary-600 focus:border-primary block w-full px-2.5 py-3"
+            className="bg-gray-50 border border-[#A9C5DE] shadow-sm text-gray-900 text-sm sm:text-base rounded-md focus:ring-primary focus:border-primary block w-full px-2.5 py-3"
           />
         </div>
         <div className="mb-6 px-1.5 sm:px-4">
@@ -42,7 +42,7 @@ const Form: FC = () => {
             type="email"
             id="email-input"
             placeholder="queen@gmail.com"
-            className="bg-gray-50 border border-[#A9C5DE] text-[#7889B2] shadow-sm text-sm sm:text-base rounded-md focus:ring-secondary-600 focus:border-primary block w-full px-2.5 py-3"
+            className="bg-gray-50 border border-[#A9C5DE] text-[#7889B2] shadow-sm text-sm sm:text-base rounded-md focus:ring-primary focus:border-primary block w-full px-2.5 py-3"
           />
         </div>
         <div className="mb-6 px-1.5 sm:px-4">
@@ -54,7 +54,7 @@ const Form: FC = () => {
           </label>
           <textarea
             id="message-input"
-            className="bg-gray-50 border h-64 border-[#A9C5DE] text-[#7889B2] shadow-sm text-sm sm:text-base rounded-md focus:ring-secondary-600 focus:border-primary block w-full px-2.5 py-3"
+            className="bg-gray-50 border h-64 border-[#A9C5DE] text-[#7889B2] shadow-sm text-sm sm:text-base rounded-md focus:ring-primary focus:border-primary block w-full px-2.5 py-3"
           ></textarea>
         </div>
         <div className="px-1.5 sm:px-4 mt-3">
