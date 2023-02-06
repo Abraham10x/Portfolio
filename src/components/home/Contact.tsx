@@ -10,7 +10,7 @@ const Contact: FC = () => {
         className="container pt-12 px-5 sm:px-10 pb-8 2xl:px-0 mx-auto mt-0 sm:mt-10"
         id="contact-us"
       >
-        <div className="bg-gradient-600 flex flex-col lg:flex-row justify-between pb-7 lg:pb-14 pt-10 lg:pt-20 px-3 sm:px-14 lg:px-20 gap-10 rounded-[10px] sm:rounded-xl lg:rounded-3xl">
+        <div className="flex flex-col lg:flex-row justify-between pb-7 lg:pb-14 pt-10 lg:pt-20 px-3 sm:px-14 lg:px-20 gap-10 rounded-[10px] sm:rounded-xl lg:rounded-3xl">
           <Form />
           <div className="flex flex-col lg:pr-10 my-auto basis-[45%]">
             <h3 className="text-black font-serif font-bold text-xl sm:text-3xl lg:text-4xl mb-2 sm:mb-4">

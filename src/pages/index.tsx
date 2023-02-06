@@ -5,6 +5,7 @@ import Hero from "@/components/home/Hero";
 import Contact from "@/components/home/Contact";
 import Testimonial from "@/components/home/Testimonial";
 import Experience from "@/components/home/Experience";
+import Services from "@/components/home/Services";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <Seo templateTitle="Portfolio" />
       <Hero />
       <Experience />
+      <Services />
       <Testimonial />
       <Contact />
     </Layout>
