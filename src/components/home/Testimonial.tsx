@@ -12,7 +12,7 @@ import TestimonialData from "./TestimonialData";
 const Testimonial: FC = () => {
   return (
     <div className="mt-8">
-      <div className="container 2xl:px-0 mx-auto py-36">
+      <div className="container px-5 sm:px-10 mx-auto py-36">
         <h3 className="text-black capitalize text-left font-bold text-2xl lg:3xl lg:text-5xl">
           what my clients{" "}
           <span className="text-secondary font-sans capitalize font-medium">

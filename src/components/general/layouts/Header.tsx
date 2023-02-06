@@ -54,7 +54,7 @@ const Header: FC = () => {
             </Link>
           </li>
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
-            <Link legacyBehavior href="/nciFund">
+            <Link legacyBehavior href="">
               <a className="md:px-6 lg:px-3 hover:text-green duration-500 text-base">
                 Contact
               </a>

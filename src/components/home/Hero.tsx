@@ -2,13 +2,14 @@
 import Image from "next/image";
 import { FC } from "react";
 import { Button } from "@/components/general/Button";
+import RecentWork from "./RecentWork";
 
 const Hero: FC = () => {
   return (
-    <div className="bg-primary-light">
-      <div className="sm:container pt-12 pb-8 2xl:px-0 mx-auto mt-28">
-        <div className="flex flex-col lg:flex-row justify-between bg-secondary-600 bg-opacity-10 gap-y-24 gap-x-14 lg:py-12 rounded-3xl relative">
-          <div className="flex flex-col justify-between h-full basis-[50%] my-auto px-8 pt-10 lg:pt-0">
+    <div className="bg-primary-light h-[370vh] sm:h-[140vh] 2xl:h-[120vh]">
+      <div className="container pt-12 px-5 sm:px-10 pb-8 mx-auto mt-28">
+        <div className="flex flex-col lg:flex-row justify-between bg-secondary-600 gap-y-24 gap-x-14 lg:py-12 rounded-3xl relative">
+          <div className="flex flex-col justify-between h-full basis-[50%] my-auto pt-10 lg:pt-0">
             <p className="font-bold text-xs sm:text-base lg:text-xl uppercase text-primary font-serif">
               Hi, my name is
             </p>
@@ -43,14 +44,14 @@ const Hero: FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-between mt-16">
+        <div className="flex flex-col sm:flex-row justify-between mt-16">
           <div className="flex flex-row gap-x-2">
             <hr className="w-20 mt-4 h-1 border bg-black" />
-            <p className="font-sans font-bold text-2xl ml-2 text-secondary">
+            <p className="font-sans font-bold text-3xl ml-2 text-secondary">
               <span className="text-black font-serif">My </span>recent projects.
             </p>
           </div>
-          <div className="flex flex-row gap-x-16">
+          <div className="grid grid-cols-1 sm:grid-cols-4 justify-evenly gap-x-10">
             <div className="flex flex-col gap-1">
               <h5 className="font-bold text-2xl font-serif">50+</h5>
               <p className="text-2xl">Projects Completed</p>
@@ -69,6 +70,7 @@ const Hero: FC = () => {
             </div>
           </div>
         </div>
+        <RecentWork />
       </div>
     </div>
   );

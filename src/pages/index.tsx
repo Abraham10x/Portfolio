@@ -6,6 +6,7 @@ import Contact from "@/components/home/Contact";
 import Testimonial from "@/components/home/Testimonial";
 import Experience from "@/components/home/Experience";
 import Services from "@/components/home/Services";
+import Projects from "@/components/home/Projects";
 
 const Home: NextPage = () => {
   return (
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       <Hero />
       <Experience />
       <Services />
+      <Projects />
       <Testimonial />
       <Contact />
     </Layout>
