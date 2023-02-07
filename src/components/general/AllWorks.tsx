@@ -6,15 +6,18 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
-import worksData from "@/components/general/WorksData";
+import WorksData from "./WorksData";
 
-const AllWorks: FC = () => {
+const RecentWork: FC = () => {
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-14 justify-center mt-14">
-        {worksData.map((data) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg::grid-cols-3 gap-14 justify-center mt-24 relative">
+        {WorksData.map((data) => (
           <>
-            <div key={data.id}>
+            <div
+              key={data.id}
+              className="hover:shadow-xl relative hover:-translate-y-6 transition-all delay-150 duration-300 ease-in-out pb-4"
+            >
               <div className="flex flex-col gap-5">
                 <Image
                   data-hs-overlay={`#${data.modal}`}
@@ -24,16 +27,19 @@ const AllWorks: FC = () => {
                   width={500}
                   height={500}
                 />
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between px-3">
                   <div className="flex flex-col gap-1">
-                    <p className="text-2xl font-bold">{data.title}</p>
-                    <p className="text-lg">{data.industry}</p>
+                    <p className="text-xl lg:text-2xl font-bold">
+                      {data.title}
+                    </p>
+                    <p className="text-base sm:text-lg">{data.industry}</p>
                   </div>
                   <div className="flex flex-row gap-4">
                     {data.github && (
                       <Link legacyBehavior href={data.github}>
                         <a target="_blank" rel="noopener noreferrer">
                           <Image
+                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
                             src="/img/tools/github.svg"
                             alt="icon"
                             width={40}
@@ -45,6 +51,7 @@ const AllWorks: FC = () => {
                     <Link legacyBehavior href={data.live}>
                       <a target="_blank" rel="noopener noreferrer">
                         <Image
+                          className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
                           src="/img/up-right-arrow.svg"
                           alt="icon"
                           width={40}
@@ -60,10 +67,10 @@ const AllWorks: FC = () => {
               id={data.modal}
               className="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto"
             >
-              <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-3xl sm:w-full m-3 sm:mx-auto h-[calc(100%-3.5rem)] min-h-[calc(100%-3.5rem)] flex items-center">
+              <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-4xl sm:w-full m-3 sm:mx-auto h-[calc(100%-3.5rem)] min-h-[calc(100%-3.5rem)] flex items-center">
                 <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-xl ]">
                   <div className="flex justify-between items-center py-7 px-10 border-b">
-                    <h3 className="font-bold text-3xl text-blue">
+                    <h3 className="font-bold text-xl sm:text-3xl text-blue">
                       Project Description
                     </h3>
                     <button
@@ -87,7 +94,7 @@ const AllWorks: FC = () => {
                       </svg>
                     </button>
                   </div>
-                  <div className="py-4 px-10 overflow-y-auto">
+                  <div className="pb-4 overflow-y-auto">
                     <Swiper
                       slidesPerView={1}
                       // spaceBetween={30}
@@ -122,12 +129,12 @@ const AllWorks: FC = () => {
                     >
                       {data.slider.map((image, index) => (
                         <SwiperSlide key={index}>
-                          <div className="px-8 border border-white bg-white rounded-xl flex flex-col gap-6 mx-12">
+                          <div className="mt-0">
                             <div className="flex flex-row">
                               <Image
                                 src={image}
                                 alt={data.industry}
-                                className="w-full"
+                                className="w-full h-full sm:h-[35rem]"
                                 width={500}
                                 height={500}
                               />
@@ -136,9 +143,9 @@ const AllWorks: FC = () => {
                         </SwiperSlide>
                       ))}
                     </Swiper>
-                    <div className="space-y-4">
-                      <div className="flex flex-row justify-between">
-                        <h3 className="text-3xl font-semibold text-black">
+                    <div className="space-y-4 px-10 mt-5 sm:mt-0">
+                      <div className="flex flex-row justify-between gap-6">
+                        <h3 className="text-xl sm:text-3xl font-semibold text-black">
                           {data.title}
                         </h3>
                         <div className="flex flex-row gap-3">
@@ -147,6 +154,7 @@ const AllWorks: FC = () => {
                               <Link legacyBehavior href={data.github}>
                                 <a target="_blank" rel="noopener noreferrer">
                                   <Image
+                                    className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
                                     src="/img/tools/github.svg"
                                     alt="icon"
                                     width={40}
@@ -158,6 +166,7 @@ const AllWorks: FC = () => {
                             <Link legacyBehavior href={data.live}>
                               <a target="_blank" rel="noopener noreferrer">
                                 <Image
+                                  className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
                                   src="/img/up-right-arrow.svg"
                                   alt="icon"
                                   width={40}
@@ -170,21 +179,21 @@ const AllWorks: FC = () => {
                       </div>
 
                       <div>
-                        <h3 className="text-2xl font-bold text-black">
+                        <h3 className="text-xl sm:text-2xl mb-4 font-bold text-black">
                           Project Summary
                         </h3>
                         {data.summary}
                       </div>
 
                       <div className="flex flex-col gap-3 pt-6">
-                        <h3 className="text-2xl font-bold text-black">
+                        <h3 className="text-xl sm:text-2xl font-bold text-black">
                           Technologies Used
                         </h3>
-                        <div className="grid grid-cols-3 justify-start mt-1 gap-x-3">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 justify-start mt-1 gap-x-3 gap-y-5">
                           {data.tools.map((tool, index) => (
                             <div
                               key={index}
-                              className="bg-primary flex flex-row justify-center rounded-md gap-3 w-44 py-2"
+                              className="bg-white border border-primary hover:text-white hover:bg-primary transition-all delay-150 duration-300 ease-in-out flex flex-row justify-center rounded-md gap-3 w-44 py-2"
                             >
                               <Image
                                 src={tool.image}
@@ -192,7 +201,7 @@ const AllWorks: FC = () => {
                                 width={40}
                                 height={40}
                               />
-                              <p className="text-white text-lg my-auto">
+                              <p className="text-base sm:text-lg my-auto">
                                 {tool.title}
                               </p>
                             </div>
@@ -201,10 +210,10 @@ const AllWorks: FC = () => {
                       </div>
 
                       <div className="flex flex-col gap-3 pt-7">
-                        <h3 className="text-2xl font-bold text-black">
+                        <h3 className="text-xl sm:text-2xl font-bold text-black">
                           Collaborators
                         </h3>
-                        <div className="grid grid-cols-3 justify-start mt-1">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-start mt-1">
                           {data.collaborators.map((people, index) => (
                             <div key={index} className="flex flex-row">
                               <Image
@@ -214,9 +223,13 @@ const AllWorks: FC = () => {
                                 height={50}
                               />
                               <div className="flex-col ml-4 my-auto">
-                                <h4 className="text-secondary font-bold text-sm sm:text-base lg:text-lg">
-                                  {people.username}
-                                </h4>
+                                <Link legacyBehavior href={people.linkedin}>
+                                  <a target="_blank" rel="noopener noreferrer">
+                                    <h4 className="text-secondary hover:text-secondary/80 hover:scale-105 transition-all delay-150 duration-300 ease-in-out font-bold text-sm sm:text-base lg:text-lg">
+                                      {people.username}
+                                    </h4>
+                                  </a>
+                                </Link>
                                 <p className="text-black font-normal text-xs sm:text-sm lg:text-base mt-1">
                                   {people.role}
                                 </p>
@@ -229,7 +242,7 @@ const AllWorks: FC = () => {
                   </div>
                   <div className="hs-dropdown-toggle flex justify-end mt-5 items-center gap-x-2 py-5 px-10 border-t border-gray-300">
                     <a
-                      className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-secondary text-white hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition-all text-sm0"
+                      className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent hover:scale-110 hover:-translate-y-1 delay-150 duration-300 ease-in-out font-semibold bg-secondary text-white hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition-all text-sm0"
                       href={data.live}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -247,4 +260,4 @@ const AllWorks: FC = () => {
   );
 };
 
-export default AllWorks;
+export default RecentWork;

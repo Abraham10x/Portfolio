@@ -19,7 +19,7 @@ const Testimonial: FC = () => {
             say
           </span>
         </h3>
-        <p className="text-black capitalize text-base w-[35%] sm:text-xl mt-4 text-left">
+        <p className="text-black capitalize text-base w-full sm:w-[35%] sm:text-xl mt-4 text-left">
           Fast-forward to today, and I’ve had the privilege of working at an
           advertising.
         </p>

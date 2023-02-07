@@ -66,7 +66,7 @@ const Header: FC = () => {
               href="/auth/login"
               className="xl:mx-8 xl:ml-36"
             >
-              <a className="pointer md:ml-5 xl:ml-14 text-center text-white font-semibold rounded focus:outline-none bg-secondary border-2 border-primary-light py-2 px-10 shadow-lg hover:bg-secondary/80 hover:border-secondary/80 ">
+              <a className="pointer md:ml-5 xl:ml-14 text-center text-white font-semibold rounded focus:outline-none bg-secondary border-2 border-primary-light py-2 px-10 shadow-lg hover:bg-secondary/80 hover:scale-110 transition delay-150 duration-300 ease-in-out hover:border-secondary/80 ">
                 Resume
               </a>
             </Link>

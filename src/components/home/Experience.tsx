@@ -5,17 +5,17 @@ import Tabs from "./Tabs";
 
 const Experience: FC = () => {
   return (
-    <div className="bg-white pt-60 sm:pt-56 pb-28">
+    <div className="bg-white py-28">
       <div className="container pt-12 px-5 sm:px-10 pb-8 2xl:px-0 mx-auto mt-0 sm:mt-10">
-        <h3 className="text-black capitalize text-left font-bold text-2xl lg:3xl lg:text-5xl">
+        <h3 className="text-black capitalize text-left font-bold text-3xl sm:text-4xl lg:text-5xl">
           where I've{" "}
-          <span className="text-secondary font-sans capitalize font-medium">
+          <span className="text-secondary font-sans capitalize font-bold">
             {" "}
             Worked{" "}
           </span>
         </h3>
 
-        <div className="flex flex-col sm:flex-row justify-between mt-10">
+        <div className="flex flex-col lg:flex-row justify-between mt-10">
           <Tabs />
           <div className="flex flex-col sm:flex-row align-top gap-x-10 basis-1/2">
             <div className="flex flex-col gap-y-10">

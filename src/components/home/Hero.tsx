@@ -3,70 +3,103 @@ import Image from "next/image";
 import { FC } from "react";
 import { Button } from "@/components/general/Button";
 import RecentWork from "./RecentWork";
+import Link from "next/link";
 
 const Hero: FC = () => {
   return (
-    <div className="bg-primary-light h-[370vh] sm:h-[140vh] 2xl:h-[120vh]">
-      <div className="container pt-12 px-5 sm:px-10 pb-8 mx-auto mt-28">
+    <div className="bg-primary-light">
+      <div className="container sm:pt-12 px-5 sm:px-10 pb-8 mx-auto mt-24 sm:mt-28">
         <div className="flex flex-col lg:flex-row justify-between bg-secondary-600 gap-y-24 gap-x-14 lg:py-12 rounded-3xl relative">
           <div className="flex flex-col justify-between h-full basis-[50%] my-auto pt-10 lg:pt-0">
-            <p className="font-bold text-xs sm:text-base lg:text-xl uppercase text-primary font-serif">
+            <p className="font-bold text-base sm:text-lg lg:text-xl uppercase text-primary font-serif">
               Hi, my name is
             </p>
-            <h1 className="font-bold text-2xl sm:text-4xl lg:text-5xl mt-3 text-secondary">
+            <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl mt-3 text-secondary">
               Ameh Abraham.
             </h1>
-            <h1 className="font-bold text-2xl sm:text-4xl lg:text-5xl text-black leading-snug font-serif">
+            <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-black leading-snug font-serif">
               I build and design software.
             </h1>
-            <p className="text-base lg:text-2xl text-text-300 mt-4 lg:mt-8">
+            <p className="text-base sm:text-xl lg:text-2xl text-text-300 mt-4 lg:mt-8">
               I’m a software engineer specializing in building (and occasionally
               designing) exceptional digital experiences. Currently, I’m focused
               on building accessible, human-centered products.
             </p>
             <div className="flex sm:flex-row mt-8 gap-6">
-              <Button className="bg-secondary hover:bg-secondary/70 transition-all font-semibold text-white px-8 sm:px-11 py-3 leading-7 text-lg sm:text-xl rounded-full">
+              <Button className="bg-secondary hover:bg-secondary/70 hover:scale-110 transition delay-150 duration-300 ease-in-out font-semibold text-white px-8 sm:px-11 py-3 leading-7 text-lg sm:text-xl rounded-full">
                 Hire Me
               </Button>
-              <Button className="border border-primary hover:bg-primary/20 transition-all px-8 sm:px-11 py-3 text-black font-semibold leading-7 text-lg sm:text-xl rounded-full">
-                Let's talk
+              <Button className="border border-primary hover:bg-primary/20 hover:scale-110 transition delay-150 duration-300 ease-in-out px-8 sm:px-11 py-3 text-black font-semibold leading-7 text-lg sm:text-xl rounded-full">
+                <Link legacyBehavior href="#contact-us">
+                  <a>Let's talk</a>
+                </Link>
               </Button>
             </div>
           </div>
           <div className="relative">
             <Image
-              className="basis-full lg:basis-[20%]"
+              className="basis-full lg:basis-[20%] sm:mx-auto lg:mx-0"
               src="/img/abraham.png"
-              alt="doctors-3d"
+              alt="Ameh Abraham"
               width={600}
               height={600}
+            />
+            <Image
+              className="w-6 sm:w-12 absolute top-12 sm:top-20 left-16 sm:left-32"
+              src="/img/hero/figma.svg"
+              alt="figma logo"
+              width={35}
+              height={35}
+            />
+            <Image
+              className="absolute w-10 sm:w-16 top-12 sm:top-24 right-16 sm:right-48 lg:right-28"
+              src="/img/hero/react.svg"
+              alt="react logo"
+              width={55}
+              height={55}
+            />
+            <Image
+              className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 left-8 sm:left-20"
+              src="/img/hero/typescript.svg"
+              alt="typescript logo"
+              width={50}
+              height={50}
+            />
+            <Image
+              className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 right-10 sm:right-36 lg:right-28"
+              src="/img/hero/javascript.svg"
+              alt="javascript logo"
+              width={50}
+              height={50}
             />
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-between mt-16">
+        <div className="flex flex-col lg:flex-row justify-between mt-16">
           <div className="flex flex-row gap-x-2">
-            <hr className="w-20 mt-4 h-1 border bg-black" />
+            <hr className="w-20 mt-4 h-1 border bg-black hidden sm:inline-block" />
             <p className="font-sans font-bold text-3xl ml-2 text-secondary">
               <span className="text-black font-serif">My </span>recent projects.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-4 justify-evenly gap-x-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-evenly gap-x-10 gap-y-5 mt-10 lg:mt-0">
             <div className="flex flex-col gap-1">
-              <h5 className="font-bold text-2xl font-serif">50+</h5>
-              <p className="text-2xl">Projects Completed</p>
+              <h5 className="font-bold text-xl sm:text-2xl font-serif">50+</h5>
+              <p className="text-xl sm:text-2xl">Projects Completed</p>
             </div>
             <div className="flex flex-col gap-1">
-              <h5 className="font-bold text-2xl font-serif">10+</h5>
-              <p className="text-2xl">Design Projects</p>
+              <h5 className="font-bold text-xl sm:text-2xl font-serif">10+</h5>
+              <p className="text-xl sm:text-2xl">Design Projects</p>
             </div>
             <div className="flex flex-col gap-1">
-              <h5 className="font-bold text-2xl font-serif">30+</h5>
-              <p className="text-2xl">Dev Projects</p>
+              <h5 className="font-bold text-xl sm:text-2xl font-serif">30+</h5>
+              <p className="text-xl sm:text-2xl">Dev Projects</p>
             </div>
             <div className="flex flex-col gap-1">
-              <h5 className="font-bold text-2xl font-serif">95.9%</h5>
-              <p className="text-2xl">Satisfied clients</p>
+              <h5 className="font-bold text-xl sm:text-2xl font-serif">
+                95.9%
+              </h5>
+              <p className="text-xl sm:text-2xl">Satisfied clients</p>
             </div>
           </div>
         </div>
