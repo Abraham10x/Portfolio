@@ -8,7 +8,7 @@ import Link from "next/link";
 const Hero: FC = () => {
   return (
     <div className="bg-primary-light">
-      <div className="container sm:pt-12 px-5 sm:px-10 pb-8 mx-auto mt-24 sm:mt-28">
+      <div className="container pt-10 sm:pt-14 px-5 sm:px-10 pb-8 mx-auto">
         <div className="flex flex-col lg:flex-row justify-between bg-secondary-600 gap-y-24 gap-x-14 lg:py-12 rounded-3xl relative">
           <div className="flex flex-col justify-between h-full basis-[50%] my-auto pt-10 lg:pt-0">
             <p className="font-bold text-base sm:text-lg lg:text-xl uppercase text-primary font-serif">
@@ -36,42 +36,44 @@ const Hero: FC = () => {
               </Button>
             </div>
           </div>
-          <div className="relative">
-            <Image
-              className="basis-full lg:basis-[20%] sm:mx-auto lg:mx-0"
-              src="/img/abraham.png"
-              alt="Ameh Abraham"
-              width={600}
-              height={600}
-            />
-            <Image
-              className="w-6 sm:w-12 absolute top-12 sm:top-20 left-16 sm:left-32"
-              src="/img/hero/figma.svg"
-              alt="figma logo"
-              width={35}
-              height={35}
-            />
-            <Image
-              className="absolute w-10 sm:w-16 top-12 sm:top-24 right-16 sm:right-48 lg:right-28"
-              src="/img/hero/react.svg"
-              alt="react logo"
-              width={55}
-              height={55}
-            />
-            <Image
-              className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 left-8 sm:left-20"
-              src="/img/hero/typescript.svg"
-              alt="typescript logo"
-              width={50}
-              height={50}
-            />
-            <Image
-              className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 right-10 sm:right-36 lg:right-28"
-              src="/img/hero/javascript.svg"
-              alt="javascript logo"
-              width={50}
-              height={50}
-            />
+          <div className="relative basis-[50%] flex justify-center lg:justify-end">
+            <div>
+              <Image
+                className="basis-full lg:basis-[20%] sm:mx-auto lg:mx-0"
+                src="/img/abraham.png"
+                alt="Ameh Abraham"
+                width={600}
+                height={600}
+              />
+              <Image
+                className="w-6 sm:w-12 absolute top-12 sm:top-20 left-16 sm:left-56"
+                src="/img/hero/figma.svg"
+                alt="figma logo"
+                width={35}
+                height={35}
+              />
+              <Image
+                className="absolute w-10 sm:w-16 top-12 sm:top-24 right-16 sm:right-48 lg:right-28"
+                src="/img/hero/react.svg"
+                alt="react logo"
+                width={55}
+                height={55}
+              />
+              <Image
+                className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 left-8 sm:left-40"
+                src="/img/hero/typescript.svg"
+                alt="typescript logo"
+                width={50}
+                height={50}
+              />
+              <Image
+                className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 right-10 sm:right-36 lg:right-28"
+                src="/img/hero/javascript.svg"
+                alt="javascript logo"
+                width={50}
+                height={50}
+              />
+            </div>
           </div>
         </div>
 

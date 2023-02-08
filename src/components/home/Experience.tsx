@@ -15,9 +15,9 @@ const Experience: FC = () => {
           </span>
         </h3>
 
-        <div className="flex flex-col lg:flex-row justify-between mt-10">
+        <div className="flex flex-col xl:flex-row gap-x-10 gap-y-16 justify-between mt-10">
           <Tabs />
-          <div className="flex flex-col sm:flex-row align-top gap-x-10 basis-1/2">
+          <div className="flex flex-col sm:flex-row justify-center sm:justify-start xl:justify-end mx-auto sm:mx-0 align-top gap-x-10 basis-1/2">
             <div className="flex flex-col gap-y-10">
               <div className="w-72 shadow-2xl flex justify-center py-8">
                 <Image

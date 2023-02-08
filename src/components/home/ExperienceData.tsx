@@ -4,7 +4,6 @@ export default [
     id: 1,
     company: "Google",
     position: "Engineer",
-    tabsId: "vertical-tab-with-border-item-1",
     roles: [
       `Write modern, performant, maintainable code for a diverse array of client and internal projects`,
       `Write modern, performant, maintainable code for a diverse array of client and internal projects`,

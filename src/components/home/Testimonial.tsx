@@ -11,15 +11,15 @@ import TestimonialData from "./TestimonialData";
 
 const Testimonial: FC = () => {
   return (
-    <div className="mt-8">
-      <div className="container px-5 sm:px-10 mx-auto py-36">
-        <h3 className="text-black capitalize text-left font-bold text-2xl lg:3xl lg:text-5xl">
+    <div className="mt-8 bg-primary-light">
+      <div className="container px-5 sm:px-10 mx-auto py-20 lg:py-36">
+        <h3 className="text-black capitalize text-left font-bold text-3xl sm:text-4xl lg:text-5xl">
           what my clients{" "}
           <span className="text-secondary font-sans capitalize font-medium">
             say
           </span>
         </h3>
-        <p className="text-black capitalize text-base w-full sm:w-[35%] sm:text-xl mt-4 text-left">
+        <p className="text-black capitalize text-base w-full sm:w-4/5 lg:w-[35%] sm:text-xl lg:text-2xl mt-4 text-left">
           Fast-forward to today, and I’ve had the privilege of working at an
           advertising.
         </p>
@@ -42,11 +42,11 @@ const Testimonial: FC = () => {
           breakpoints={{
             640: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             1024: {
               slidesPerView: 3,
@@ -58,7 +58,7 @@ const Testimonial: FC = () => {
         >
           {TestimonialData.map((data) => (
             <SwiperSlide key={data.id}>
-              <div className="p-8 border border-white bg-white rounded-xl flex flex-col gap-6 mt-20 mx-12">
+              <div className="p-8 border border-white bg-white rounded-xl flex flex-col gap-6 mt-20 mx-5 sm:mx-1 xl:mx-3 2xl:mx-10">
                 <div className="flex flex-row gap-4">
                   <Image
                     className=""

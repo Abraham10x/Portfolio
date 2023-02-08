@@ -6,26 +6,26 @@ const Projects: FC = () => {
   return (
     <div className="bg-white py-32">
       <div className="container px-5 sm:px-10 pb-8 2xl:px-0 mx-auto mt-0 sm:mt-10">
-        <h3 className="text-black capitalize font-bold text-2xl lg:3xl lg:text-5xl text-center">
-          Let’s have a look at my <br />
+        <h3 className="text-black capitalize font-bold text-3xl sm:text-4xl lg:text-5xl text-center">
+          Let’s have a look at my <br className="hidden sm:inline-block" />
           <span className="text-secondary font-sans capitalize font-medium">
             {" "}
             Services{" "}
           </span>
         </h3>
-        <p className="text-black text-sm sm:text-xl lg:text-2xl my-3 text-center w-3/5 pt-4 mx-auto">
+        <p className="text-black text-base sm:text-xl lg:text-2xl my-3 text-center w-full sm:w-[65%] lg:w-3/5 pt-4 mx-auto">
           Fast-forward to today, and I’ve had the privilege of working at an
           advertising agency, a <span className="text-primary">start-up</span>,
           a huge corporation,
         </p>
         <nav
-          className="flex space-x-5 justify-center mt-14"
+          className="flex space-x-5 w-full justify-center mt-14"
           aria-label="Tabs"
           role="tablist"
         >
           <button
             type="button"
-            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium text-center text-gray-500 rounded-lg hover:text-secondary dark:hover:text-gray-400 active"
+            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm sm:text-base font-medium text-center text-black rounded-lg  active"
             id="pills-with-brand-color-item-1"
             data-hs-tab="#pills-with-brand-color-1"
             aria-controls="pills-with-brand-color-1"
@@ -35,7 +35,7 @@ const Projects: FC = () => {
           </button>
           <button
             type="button"
-            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium text-center text-gray-500 rounded-lg hover:text-secondary dark:hover:text-gray-400 dark:hover:text-gray-300"
+            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm sm:text-base font-medium text-center text-black rounded-lg  hover:text-secondary"
             id="pills-with-brand-color-item-2"
             data-hs-tab="#pills-with-brand-color-2"
             aria-controls="pills-with-brand-color-2"
@@ -45,7 +45,7 @@ const Projects: FC = () => {
           </button>
           <button
             type="button"
-            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium text-center text-gray-500 rounded-lg hover:text-secondary dark:hover:text-gray-400 dark:hover:text-gray-300"
+            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm sm:text-base font-medium text-center text-black rounded-lg  hover:text-secondary"
             id="pills-with-brand-color-item-3"
             data-hs-tab="#pills-with-brand-color-3"
             aria-controls="pills-with-brand-color-3"
@@ -55,7 +55,7 @@ const Projects: FC = () => {
           </button>
           <button
             type="button"
-            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm font-medium text-center text-gray-500 rounded-lg hover:text-secondary dark:hover:text-gray-400 dark:hover:text-gray-300"
+            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm sm:text-base font-medium text-center text-black rounded-lg  hover:text-secondary"
             id="pills-with-brand-color-item-4"
             data-hs-tab="#pills-with-brand-color-4"
             aria-controls="pills-with-brand-color-4"
@@ -79,7 +79,7 @@ const Projects: FC = () => {
             role="tabpanel"
             aria-labelledby="pills-with-brand-color-item-2"
           >
-            <p className="text-gray-500 dark:text-gray-400">
+            <p className="text-black dark:text-gray-400">
               This is the{" "}
               <em className="font-semibold text-gray-800 dark:text-gray-200">
                 second
@@ -93,7 +93,7 @@ const Projects: FC = () => {
             role="tabpanel"
             aria-labelledby="pills-with-brand-color-item-3"
           >
-            <p className="text-gray-500 dark:text-gray-400">
+            <p className="text-black dark:text-gray-400">
               This is the{" "}
               <em className="font-semibold text-gray-800 dark:text-gray-200">
                 third
@@ -107,7 +107,7 @@ const Projects: FC = () => {
             role="tabpanel"
             aria-labelledby="pills-with-brand-color-item-4"
           >
-            <p className="text-gray-500 dark:text-gray-400">
+            <p className="text-black dark:text-gray-400">
               This is the{" "}
               <em className="font-semibold text-gray-800 dark:text-gray-200">
                 fourth

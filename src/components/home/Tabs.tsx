@@ -5,7 +5,7 @@ import ExperienceData from "./ExperienceData";
 const Tabs: FC = () => {
   return (
     <div className="flex basis-1/2">
-      <div className="hidden sm:block">
+      <div className="hidden sm:flex">
         <div className="border-r border-gray-200 dark:border-gray-700">
           <nav
             className="flex flex-col space-y-2"
@@ -17,7 +17,9 @@ const Tabs: FC = () => {
               <button
                 key={data.id}
                 type="button"
-                className="hs-tab-active:border-secondary hs-tab-active:text-secondary dark:hs-tab-active:text-secondary py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-xl whitespace-nowrap text-gray-500 hover:text-secondary active"
+                className={`hs-tab-active:border-secondary hs-tab-active:text-secondary dark:hs-tab-active:text-secondary py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-xl whitespace-nowrap text-gray-500 hover:text-secondary ${
+                  data.id === 1 ? "active" : "text-black"
+                }`}
                 id={`vertical-tab-with-border-item-${data.id}`}
                 data-hs-tab={`#vertical-tab-with-border-${data.id}`}
                 aria-controls={`vertical-tab-with-border-${data.id}`}
@@ -33,6 +35,7 @@ const Tabs: FC = () => {
           {ExperienceData.map((data) => (
             <div
               key={data.id}
+              className={`${data.id > 1 && "hidden"}`}
               id={`vertical-tab-with-border-${data.id}`}
               role="tabpanel"
               aria-labelledby={`vertical-tab-with-border-item-${data.id}`}
@@ -44,7 +47,7 @@ const Tabs: FC = () => {
               <p className="text-black my-2 text-lg">May 2018 - Present</p>
               <ul className="space-y-3 text-base">
                 {data.roles.map((item, index) => (
-                  <li key={index} className="flex space-x-3 w-[75%]">
+                  <li key={index} className="flex space-x-3 w-[80%]">
                     <svg
                       className="flex-shrink-0 h-6 w-6 text-primary"
                       width="16"
@@ -71,10 +74,10 @@ const Tabs: FC = () => {
           ))}
         </div>
       </div>
-      <div className="block sm:hidden">
+      <div className="block sm:hidden overflow-x-auto">
         <div className="border-b border-gray-200">
           <nav
-            className="-mb-0.5 flex justify-center space-x-6 w-full overflow-x-auto my-2"
+            className="-mb-0.5 flex justify-start space-x-6 w-full overflow-x-auto"
             aria-label="Tabs"
             role="tablist"
           >
@@ -82,7 +85,9 @@ const Tabs: FC = () => {
               <button
                 key={data.id}
                 type="button"
-                className="hs-tab-active:font-semibold hs-tab-active:border-blue-600 hs-tab-active:text-blue-600 py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-600 active"
+                className={`hs-tab-active:font-semibold hs-tab-active:border-secondary hs-tab-active:text-secondary py-4 px-1 inline-flex items-center gap-2 border-b-[3px] border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-secondary ${
+                  data.id === 1 ? "active" : "text-black"
+                }`}
                 id={`horizontal-alignment-item-${data.id}`}
                 data-hs-tab={`#horizontal-alignment-${data.id}`}
                 aria-controls={`horizontal-alignment-item-${data.id}`}
@@ -98,6 +103,7 @@ const Tabs: FC = () => {
           {ExperienceData.map((data) => (
             <div
               key={data.id}
+              className={`${data.id > 1 && "hidden"}`}
               id={`horizontal-alignment-${data.id}`}
               role="tabpanel"
               aria-labelledby={`horizontal-alignment-item-${data.id}`}

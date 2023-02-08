@@ -13,25 +13,25 @@ const SocialIcons: FC = () => {
       <Link href="#">
         <RiLinkedinBoxFill
           size={50}
-          className="p-2 border-secondary text-secondary border rounded-full"
+          className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"
         />
       </Link>
       <Link href="#">
         <RiGithubFill
           size={50}
-          className="p-2 border-secondary text-secondary border rounded-full"
+          className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"
         />
       </Link>
       <Link href="#">
         <RiTwitterFill
           size={50}
-          className="p-2 border-secondary text-secondary border rounded-full"
+          className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"
         />
       </Link>
-      <Link href="#">
+      <Link href="#" rel="noreferer noopener" target="_blank">
         <RiFacebookCircleFill
           size={50}
-          className="p-2 border-secondary text-secondary border rounded-full"
+          className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"
         />
       </Link>
     </div>
