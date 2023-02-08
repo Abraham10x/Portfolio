@@ -71,7 +71,7 @@ const RecentWork: FC = () => {
             >
               <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-4xl sm:w-full m-3 sm:mx-auto h-[calc(100%-3.5rem)] min-h-[calc(100%-3.5rem)] flex items-center">
                 <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-xl ]">
-                  <div className="flex justify-between items-center py-7 px-10 border-b">
+                  <div className="flex justify-between items-center py-7 px-5 sm:px-10 border-b">
                     <h3 className="font-bold text-xl sm:text-3xl text-black">
                       Project Description
                     </h3>
@@ -145,7 +145,7 @@ const RecentWork: FC = () => {
                         </SwiperSlide>
                       ))}
                     </Swiper>
-                    <div className="space-y-4 px-10 mt-5 sm:mt-0">
+                    <div className="space-y-4 px-5 sm:px-10 mt-5 sm:mt-0">
                       <div className="flex flex-row justify-between gap-6">
                         <h3 className="text-xl sm:text-3xl font-semibold text-black">
                           {data.title}
@@ -203,7 +203,7 @@ const RecentWork: FC = () => {
                                 width={40}
                                 height={40}
                               />
-                              <p className="text-base sm:text-lg my-auto">
+                              <p className="text-base sm:text-lg my-auto text-black">
                                 {tool.title}
                               </p>
                             </div>
@@ -242,7 +242,7 @@ const RecentWork: FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="hs-dropdown-toggle flex justify-end mt-5 items-center gap-x-2 py-5 px-10 border-t border-gray-300">
+                  <div className="hs-dropdown-toggle flex justify-end mt-5 items-center gap-x-2 py-5 px-5 sm:px-10 border-t border-gray-300">
                     <a
                       className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent hover:scale-110 hover:-translate-y-1 delay-150 duration-300 ease-in-out font-semibold bg-secondary text-white hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition-all text-sm0"
                       href={data.live}
