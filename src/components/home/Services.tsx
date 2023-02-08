@@ -24,17 +24,66 @@ const Services: FC = () => {
   ];
 
   const Toolkit = [
-    "/img/tools/html.svg",
-    "/img/tools/css.svg",
-    "/img/tools/javascript.svg",
-    "/img/tools/react.svg",
-    "/img/tools/boostrap.svg",
-    "/img/tools/material-ui.svg",
-    "/img/tools/next.svg",
-    "/img/tools/node.svg",
-    "/img/tools/github.svg",
-    "/img/tools/figma.svg",
-    "/img/tools/typescript.svg",
+    {
+      id: 1,
+      toolname: "HTML5",
+      icon: "/img/tools/html.svg",
+    },
+    {
+      id: 2,
+      toolname: "CSS3",
+      icon: "/img/tools/css.svg",
+    },
+    {
+      id: 3,
+      toolname: "JAVASCRIPT",
+      icon: "/img/tools/javascript.svg",
+    },
+    {
+      id: 4,
+      toolname: "REACT",
+      icon: "/img/tools/react.svg",
+    },
+    {
+      id: 5,
+      toolname: "BOOSTRAP",
+      icon: "/img/tools/boostrap.svg",
+    },
+    {
+      id: 6,
+      toolname: "MUI",
+      icon: "/img/tools/material-ui.svg",
+    },
+    {
+      id: 7,
+      toolname: "NEXT.JS",
+      icon: "/img/tools/next.svg",
+    },
+    {
+      id: 8,
+      toolname: "REDUX",
+      icon: "/img/tools/redux.svg",
+    },
+    {
+      id: 9,
+      toolname: "GITHUB",
+      icon: "/img/tools/github.svg",
+    },
+    {
+      id: 10,
+      toolname: "FIGMA",
+      icon: "/img/tools/figma.svg",
+    },
+    {
+      id: 11,
+      toolname: "TYPESCRIPT",
+      icon: "/img/tools/typescript.svg",
+    },
+    {
+      id: 12,
+      toolname: "TAILWIND",
+      icon: "/img/tools/tailwind.svg",
+    },
   ];
   return (
     <div className="bg-primary-light py-10">
@@ -45,7 +94,7 @@ const Services: FC = () => {
               <div key={data.id} className="flex flex-col w-full">
                 <div className="flex flex-row gap-3">
                   <p className="font-bold text-3xl text-black">{data.no}</p>
-                  <hr className="w-full my-auto text-black border border-black" />
+                  <hr className="w-full my-auto text-black border bg-black border-black" />
                   <Image
                     src="/img/up-right-arrow.svg"
                     alt="icon"
@@ -98,24 +147,28 @@ const Services: FC = () => {
               </span>
             </h3>
             <p className="text-black text-base sm:text-xl lg:text-2xl my-3">
-              Fast-forward to today, and I’ve had the privilege of working at an
-              advertising agency, a{" "}
-              <span className="text-primary">start-up</span>, a huge
-              corporation,
+              My goal is to continuously learn and stay current with the latest
+              technologies, to provide the best possible{" "}
+              <span className="text-primary">user experience</span> for my
+              clients and end-users.
             </p>
             <h4 className="text-black text-3xl mt-8 font-bold">
               My Toolkit 💻
             </h4>
-            <div className="grid grid-cols-6 gap-x-5 gap-y-8 mt-5">
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-x-5 gap-y-8 mt-5">
               {Toolkit.map((data, index) => (
-                <Image
-                  key={index}
-                  className="w-8 h-8 sm:w-14 sm:h-14"
-                  src={data}
-                  alt="phone icon"
-                  width={70}
-                  height={70}
-                />
+                <div key={index} className="flex flex-col gap-3 align-middle">
+                  <Image
+                    className="w-8 h-8 sm:w-14 sm:h-14 mx-auto"
+                    src={data.icon}
+                    alt="phone icon"
+                    width={70}
+                    height={70}
+                  />
+                  <p className="text-gray-500 text-sm text-center">
+                    {data.toolname}
+                  </p>
+                </div>
               ))}
             </div>
           </div>

@@ -16,7 +16,7 @@ const RecentWork: FC = () => {
           <>
             <div
               key={data.id}
-              className="hover:shadow-xl relative hover:bg-white hover:-translate-y-6 transition-all delay-150 duration-300 ease-in-out pb-4"
+              className="hover:shadow-xl relative bg-white hover:bg-white hover:-translate-y-6 transition-all delay-150 duration-300 ease-in-out pb-4"
             >
               <div className="flex flex-col gap-5">
                 <Image
@@ -46,6 +46,19 @@ const RecentWork: FC = () => {
                             alt="icon"
                             width={40}
                             height={40}
+                          />
+                        </a>
+                      </Link>
+                    )}
+                    {data.figma && (
+                      <Link legacyBehavior href={data.figma}>
+                        <a target="_blank" rel="noopener noreferrer">
+                          <Image
+                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                            src="/img/tools/figma.svg"
+                            alt="icon"
+                            width={25}
+                            height={25}
                           />
                         </a>
                       </Link>
@@ -136,7 +149,7 @@ const RecentWork: FC = () => {
                               <Image
                                 src={image}
                                 alt={data.industry}
-                                className="w-full h-full sm:h-[35rem]"
+                                className="w-full h-full sm:h-[35rem] object-cover"
                                 width={500}
                                 height={500}
                               />
@@ -161,6 +174,19 @@ const RecentWork: FC = () => {
                                     alt="icon"
                                     width={40}
                                     height={40}
+                                  />
+                                </a>
+                              </Link>
+                            )}
+                            {data.figma && (
+                              <Link legacyBehavior href={data.figma}>
+                                <a target="_blank" rel="noopener noreferrer">
+                                  <Image
+                                    className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                                    src="/img/tools/figma.svg"
+                                    alt="icon"
+                                    width={25}
+                                    height={25}
                                   />
                                 </a>
                               </Link>
@@ -195,7 +221,7 @@ const RecentWork: FC = () => {
                           {data.tools.map((tool, index) => (
                             <div
                               key={index}
-                              className="bg-white border border-primary hover:text-white hover:bg-primary transition-all delay-150 duration-300 ease-in-out flex flex-row justify-center rounded-md gap-3 w-44 py-2"
+                              className="bg-white border border-primary text-black hover:text-white hover:bg-primary transition-all delay-150 duration-300 ease-in-out flex flex-row justify-center rounded-md gap-3 w-44 py-2"
                             >
                               <Image
                                 src={tool.image}
@@ -203,7 +229,7 @@ const RecentWork: FC = () => {
                                 width={40}
                                 height={40}
                               />
-                              <p className="text-base sm:text-lg my-auto text-black">
+                              <p className="text-base sm:text-lg my-auto">
                                 {tool.title}
                               </p>
                             </div>

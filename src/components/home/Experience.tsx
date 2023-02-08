@@ -19,7 +19,7 @@ const Experience: FC = () => {
           <Tabs />
           <div className="flex flex-col sm:flex-row justify-center sm:justify-start xl:justify-end mx-auto sm:mx-0 align-top gap-x-10 basis-1/2">
             <div className="flex flex-col gap-y-10">
-              <div className="w-72 shadow-2xl flex justify-center py-8">
+              <div className="w-64 sm:w-72 shadow-2xl flex justify-center py-8">
                 <Image
                   src="/img/hashtag.svg"
                   alt="hashtag logo"
@@ -27,7 +27,7 @@ const Experience: FC = () => {
                   height={170}
                 />
               </div>
-              <div className="w-72 shadow-2xl flex justify-center py-8">
+              <div className="w-64 sm:w-72 shadow-2xl flex justify-center py-8">
                 <Image
                   src="/img/upwork.svg"
                   alt="hashtag logo"
@@ -37,7 +37,7 @@ const Experience: FC = () => {
               </div>
             </div>
             <div className="flex flex-col gap-y-10 mt-10">
-              <div className="w-72 shadow-2xl flex justify-center py-8">
+              <div className="w-64 sm:w-72 shadow-2xl flex justify-center py-8">
                 <Image
                   src="/img/technoxian.svg"
                   alt="hashtag logo"
@@ -45,7 +45,7 @@ const Experience: FC = () => {
                   height={60}
                 />
               </div>
-              <div className="w-72 shadow-2xl flex justify-center py-8">
+              <div className="w-64 sm:w-72 shadow-2xl flex justify-center py-8">
                 <Image
                   src="/img/jeliz.svg"
                   alt="hashtag logo"

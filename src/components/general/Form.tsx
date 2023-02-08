@@ -27,7 +27,7 @@ const Form: FC = () => {
           <input
             type="text"
             id="name-input"
-            placeholder="Queen"
+            placeholder="Abraham"
             className="bg-gray-50 border border-[#A9C5DE] shadow-sm text-gray-900 text-sm sm:text-base rounded-md focus:ring-primary focus:border-primary block w-full px-2.5 py-3"
           />
         </div>
@@ -41,7 +41,7 @@ const Form: FC = () => {
           <input
             type="email"
             id="email-input"
-            placeholder="queen@gmail.com"
+            placeholder="abraham@gmail.com"
             className="bg-gray-50 border border-[#A9C5DE] text-[#7889B2] shadow-sm text-sm sm:text-base rounded-md focus:ring-primary focus:border-primary block w-full px-2.5 py-3"
           />
         </div>

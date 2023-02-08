@@ -10,16 +10,20 @@ const Projects: FC = () => {
           Let’s have a look at my <br className="hidden sm:inline-block" />
           <span className="text-secondary font-sans capitalize font-medium">
             {" "}
-            Services{" "}
+            Projects{" "}
           </span>
         </h3>
         <p className="text-black text-base sm:text-xl lg:text-2xl my-3 text-center w-full sm:w-[65%] lg:w-3/5 pt-4 mx-auto">
-          Fast-forward to today, and I’ve had the privilege of working at an
-          advertising agency, a <span className="text-primary">start-up</span>,
-          a huge corporation,
+          I have extensive experience in delivering high-quality software
+          solutions for a variety of industries, I pride myself on my ability to
+          understand project requirements, analyze and design effective
+          solutions, and execute projects with{" "}
+          <span className="text-primary">
+            efficiency and attention to detail.
+          </span>
         </p>
         <nav
-          className="flex space-x-5 w-full justify-center mt-14"
+          className="flex space-x-5 w-full justify-center mt-14 overflow-x-auto"
           aria-label="Tabs"
           role="tablist"
         >

@@ -10,19 +10,19 @@ import {
 const SocialIcons: FC = () => {
   return (
     <div className="flex flex-row space-x-4 text-white justify-start mt-8">
-      <Link href="#">
+      <Link href="#" rel="noreferer noopener" target="_blank">
         <RiLinkedinBoxFill
           size={50}
           className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"
         />
       </Link>
-      <Link href="#">
+      <Link href="#" rel="noreferer noopener" target="_blank">
         <RiGithubFill
           size={50}
           className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"
         />
       </Link>
-      <Link href="#">
+      <Link href="#" rel="noreferer noopener" target="_blank">
         <RiTwitterFill
           size={50}
           className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"

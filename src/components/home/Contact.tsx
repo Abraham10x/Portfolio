@@ -30,7 +30,7 @@ const Contact: FC = () => {
                 height={60}
               />
               <p className="text-secondary text-base sm:text-lg lg:text-2xl my-auto">
-                +1 470-336-0611
+                +234 903 450 9153
               </p>
             </div>
             <div className="flex flex-row gap-5 sm:gap-8 lg:gap-10 mt-5 sm:mt-10 lg:mt-20">
@@ -41,8 +41,8 @@ const Contact: FC = () => {
                 width={60}
                 height={60}
               />
-              <p className="text-secondary text-base sm:text-lg lg:text-2xl my-auto">
-                Contact@stabledoc.com
+              <p className="text-secondary text-base sm:text-lg lg:text-2xl break-all my-auto">
+                amehabraham811@gmail.com
               </p>
             </div>
             <div className="flex flex-row gap-5 sm:gap-8 lg:gap-10 mt-5 sm:mt-10 lg:mt-20">
@@ -54,8 +54,8 @@ const Contact: FC = () => {
                 height={60}
               />
               <p className="text-secondary text-base sm:text-lg lg:text-2xl my-auto">
-                3379 Peachtree Road NE (Buckhead), Suite 555 Atlanta, GA 30326,
-                USA
+                75 Nsukka St, Garki 900110, Abuja, Federal Capital Territory,
+                Nigeria.
               </p>
             </div>
           </div>

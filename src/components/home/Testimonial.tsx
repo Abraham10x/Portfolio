@@ -19,9 +19,10 @@ const Testimonial: FC = () => {
             say
           </span>
         </h3>
-        <p className="text-black capitalize text-base w-full sm:w-4/5 lg:w-[35%] sm:text-xl lg:text-2xl mt-4 text-left">
-          Fast-forward to today, and I’ve had the privilege of working at an
-          advertising.
+        <p className="text-black capitalize text-base w-full sm:w-4/5 lg:w-[40%] sm:text-xl lg:text-2xl mt-4 text-left">
+          I believe in open and effective communication, ensuring that my
+          clients are fully informed and involved in every stage of the
+          development process.
         </p>
 
         <Swiper

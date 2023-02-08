@@ -5,7 +5,7 @@ import ExperienceData from "./ExperienceData";
 const Tabs: FC = () => {
   return (
     <div className="flex basis-1/2">
-      <div className="hidden sm:flex">
+      <div className="hidden sm:flex h-fit">
         <div className="border-r border-gray-200 dark:border-gray-700">
           <nav
             className="flex flex-col space-y-2"
@@ -17,7 +17,7 @@ const Tabs: FC = () => {
               <button
                 key={data.id}
                 type="button"
-                className={`hs-tab-active:border-secondary hs-tab-active:text-secondary dark:hs-tab-active:text-secondary py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-xl whitespace-nowrap text-gray-500 hover:text-secondary ${
+                className={`hs-tab-active:border-secondary hs-tab-active:text-secondary dark:hs-tab-active:text-secondary py-1 pr-4 inline-flex items-center gap-2 border-r-[3px] border-transparent text-xl whitespace-nowrap text-black hover:text-secondary ${
                   data.id === 1 ? "active" : "text-black"
                 }`}
                 id={`vertical-tab-with-border-item-${data.id}`}
@@ -44,10 +44,13 @@ const Tabs: FC = () => {
                 {data.position}{" "}
                 <span className="text-primary">@ {data.company}</span>
               </h5>
-              <p className="text-black my-2 text-lg">May 2018 - Present</p>
+              <p className="text-black my-2 text-lg">{data.date}</p>
               <ul className="space-y-3 text-base">
                 {data.roles.map((item, index) => (
-                  <li key={index} className="flex space-x-3 w-[80%]">
+                  <li
+                    key={index}
+                    className="flex space-x-3 w-[80%] xl:w-full 2xl:w-[80%]"
+                  >
                     <svg
                       className="flex-shrink-0 h-6 w-6 text-primary"
                       width="16"
@@ -112,7 +115,7 @@ const Tabs: FC = () => {
                 {data.position}{" "}
                 <span className="text-primary">@ {data.company}</span>
               </h5>
-              <p className="text-black my-2 text-lg">May 2018 - Present</p>
+              <p className="text-black my-2 text-lg">{data.date}</p>
               <ul className="space-y-3 text-base">
                 {data.roles.map((item, index) => (
                   <li key={index} className="flex space-x-3">
