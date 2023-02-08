@@ -30,7 +30,7 @@ const Footer: FC = () => {
       </div>
       <div className="py-5 border-t border-gray-500 flex flex-row justify-center items-center border-lime-900">
         <hr className="bg-white" />
-        <p className="font-normal mr-2 text-center uppercase text-base sm:text-lg lg:text-xl font-sans">
+        <p className="font-normal mr-2 text-center uppercase text-base sm:text-lg lg:text-xl font-sans text-black">
           Designed and built by Ameh Abraham
         </p>
       </div>

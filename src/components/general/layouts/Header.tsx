@@ -43,33 +43,33 @@ const Header: FC = () => {
 
         <ul
           className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static lg:z-auto z-[2] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-[4.8rem] sm:top-[5rem] bg-white" : "top-[-1000px]"
+            open ? "top-[4.8rem] sm:top-[5rem] bg-white" : "top-[-50rem]"
           }`}
         >
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
             <Link legacyBehavior href="/">
-              <a className="md:px-6 lg:px-3 hover:text-green duration-500 text-base">
+              <a className="md:px-6 lg:px-3 hover:text-secondary text-black duration-500 text-base lg:text-lg">
                 About Me
               </a>
             </Link>
           </li>
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
             <Link legacyBehavior href="">
-              <a className="md:px-6 lg:px-3 hover:text-green duration-500 text-base">
+              <a className="md:px-6 lg:px-3 hover:text-secondary text-black duration-500 text-base lg:text-lg">
                 Services
               </a>
             </Link>
           </li>
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 mb-7 mt-0 font-semibold font-sans">
             <Link legacyBehavior href="/faqs">
-              <a className="md:px-6 lg:px-3 hover:text-green duration-500 text-base">
+              <a className="md:px-6 lg:px-3 hover:text-secondary text-black duration-500 text-base lg:text-lg">
                 Projects
               </a>
             </Link>
           </li>
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
             <Link legacyBehavior href="">
-              <a className="md:px-6 lg:px-3 hover:text-green duration-500 text-base">
+              <a className="md:px-6 lg:px-3 hover:text-secondary text-black duration-500 text-base lg:text-lg">
                 Contact
               </a>
             </Link>

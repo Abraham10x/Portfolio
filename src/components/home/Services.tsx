@@ -44,7 +44,7 @@ const Services: FC = () => {
             {services.map((data) => (
               <div key={data.id} className="flex flex-col w-full">
                 <div className="flex flex-row gap-3">
-                  <p className="font-bold text-3xl">{data.no}</p>
+                  <p className="font-bold text-3xl text-black">{data.no}</p>
                   <hr className="w-full my-auto text-black border border-black" />
                   <Image
                     src="/img/up-right-arrow.svg"
@@ -54,7 +54,7 @@ const Services: FC = () => {
                   />
                 </div>
                 <div className="my-8 ml-10">
-                  <h3 className="font-bold text-3xl lg:text-4xl">
+                  <h3 className="font-bold text-3xl lg:text-4xl text-black">
                     {data.header}
                   </h3>
                   <div className="flex flex-row mt-5 gap-x-14 gap-y-5 flex-wrap">

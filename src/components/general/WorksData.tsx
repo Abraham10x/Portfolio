@@ -18,7 +18,7 @@ export default [
     figma:
       "https://www.figma.com/file/M5yFstGy8XgXNYgiQdPkum/Robotics-competition?node-id=0%3A1&t=0fj6YM80doyg4xud-1",
     summary: (
-      <p className="">
+      <p className="text-black">
         Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
         fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
         quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
@@ -78,7 +78,7 @@ export default [
     figma:
       "https://www.figma.com/file/M5yFstGy8XgXNYgiQdPkum/Robotics-competition?node-id=0%3A1&t=0fj6YM80doyg4xud-1",
     summary: (
-      <p className="">
+      <p className="text-black">
         Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
         fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
         quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
@@ -138,7 +138,7 @@ export default [
     figma:
       "https://www.figma.com/file/M5yFstGy8XgXNYgiQdPkum/Robotics-competition?node-id=0%3A1&t=0fj6YM80doyg4xud-1",
     summary: (
-      <p className="">
+      <p className="text-black">
         Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
         fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
         quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
@@ -198,7 +198,7 @@ export default [
     figma:
       "https://www.figma.com/file/M5yFstGy8XgXNYgiQdPkum/Robotics-competition?node-id=0%3A1&t=0fj6YM80doyg4xud-1",
     summary: (
-      <p className="">
+      <p className="text-black">
         Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
         fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
         quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
@@ -258,7 +258,7 @@ export default [
     figma:
       "https://www.figma.com/file/M5yFstGy8XgXNYgiQdPkum/Robotics-competition?node-id=0%3A1&t=0fj6YM80doyg4xud-1",
     summary: (
-      <p className="">
+      <p className="text-black">
         Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
         fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
         quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
@@ -318,7 +318,7 @@ export default [
     figma:
       "https://www.figma.com/file/M5yFstGy8XgXNYgiQdPkum/Robotics-competition?node-id=0%3A1&t=0fj6YM80doyg4xud-1",
     summary: (
-      <p className="">
+      <p className="text-black">
         Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
         fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
         quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec

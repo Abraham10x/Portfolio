@@ -29,10 +29,12 @@ const RecentWork: FC = () => {
                 />
                 <div className="flex flex-row justify-between px-3">
                   <div className="flex flex-col gap-1">
-                    <p className="text-xl lg:text-2xl font-bold">
+                    <p className="text-xl lg:text-2xl font-bold text-black">
                       {data.title}
                     </p>
-                    <p className="text-base sm:text-lg">{data.industry}</p>
+                    <p className="text-base sm:text-lg text-black">
+                      {data.industry}
+                    </p>
                   </div>
                   <div className="flex flex-row gap-4">
                     {data.github && (

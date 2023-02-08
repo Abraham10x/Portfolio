@@ -20,7 +20,7 @@ const Hero: FC = () => {
             <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-black leading-snug font-serif">
               I build and design software.
             </h1>
-            <p className="text-base sm:text-xl lg:text-2xl text-text-300 mt-4 lg:mt-8">
+            <p className="text-base text-black sm:text-xl lg:text-2xl text-text-300 mt-4 lg:mt-8">
               I’m a software engineer specializing in building (and occasionally
               designing) exceptional digital experiences. Currently, I’m focused
               on building accessible, human-centered products.
@@ -84,7 +84,7 @@ const Hero: FC = () => {
               <span className="text-black font-serif">My </span>recent projects.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-evenly gap-x-10 gap-y-5 mt-10 lg:mt-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-evenly gap-x-10 gap-y-5 mt-10 lg:mt-0 text-black">
             <div className="flex flex-col gap-1">
               <h5 className="font-bold text-xl sm:text-2xl font-serif">50+</h5>
               <p className="text-xl sm:text-2xl">Projects Completed</p>

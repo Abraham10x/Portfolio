@@ -29,10 +29,12 @@ const RecentWork: FC = () => {
                 />
                 <div className="flex flex-row justify-between px-3">
                   <div className="flex flex-col gap-1">
-                    <p className="text-xl sm:text-2xl font-bold">
+                    <p className="text-black text-xl sm:text-2xl font-bold">
                       {data.title}
                     </p>
-                    <p className="text-base sm:text-lg">{data.industry}</p>
+                    <p className="text-black text-base sm:text-lg">
+                      {data.industry}
+                    </p>
                   </div>
                   <div className="flex flex-row gap-4">
                     {data.github && (
@@ -70,7 +72,7 @@ const RecentWork: FC = () => {
               <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-4xl sm:w-full m-3 sm:mx-auto h-[calc(100%-3.5rem)] min-h-[calc(100%-3.5rem)] flex items-center">
                 <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-xl ]">
                   <div className="flex justify-between items-center py-7 px-10 border-b">
-                    <h3 className="font-bold text-xl sm:text-3xl text-blue">
+                    <h3 className="font-bold text-xl sm:text-3xl text-black">
                       Project Description
                     </h3>
                     <button
