@@ -58,10 +58,9 @@ const Form: FC = () => {
           console.log(error.text);
         }
       );
-    console.log(success);
-    // if (Object.keys(formErrors).length === 0 && valid) {
-    //   setFormData(initialValues);
-    // }
+    if (Object.keys(formErrors).length === 0 && valid) {
+      setFormData(initialValues);
+    }
   };
 
   return (
