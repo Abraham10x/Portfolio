@@ -5,11 +5,8 @@ import Form from "@/components/general/Form";
 
 const Contact: FC = () => {
   return (
-    <div className="bg-white">
-      <div
-        className="container pt-12 px-5 sm:px-10 pb-8 2xl:px-0 mx-auto mt-0 sm:mt-10"
-        id="contact-us"
-      >
+    <div className="bg-white" id="contact-us">
+      <div className="container pt-12 px-5 sm:px-10 pb-8 2xl:px-0 mx-auto mt-0 sm:mt-10">
         <div className="flex flex-col lg:flex-row justify-between pb-7 lg:pb-14 pt-10 lg:pt-20 px-3 sm:px-14 lg:px-0 xl:px-20 gap-x-10 lg:gap-x-5 xl:gap-x-10 gap-y-28 rounded-[10px] sm:rounded-xl lg:rounded-3xl">
           <Form />
           <div className="flex flex-col lg:pr-10 my-auto basis-[45%]">
