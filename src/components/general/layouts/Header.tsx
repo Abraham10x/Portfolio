@@ -1,6 +1,5 @@
-import { FC, useRef, useState } from "react";
+import { FC, useState } from "react";
 import Link from "next/link";
-import { IoClose, IoMenu, IoChevronDown } from "react-icons/io5";
 import Image from "next/image";
 
 const Header: FC = () => {
@@ -11,7 +10,7 @@ const Header: FC = () => {
         <Link legacyBehavior href="/">
           <figure>
             <Image
-              className="w-1/2 md:w-full z-[999]"
+              className="w-1/2 md:w-full z-[999] cursor-pointer"
               alt="logo"
               src="/logo.svg"
               width={500}
@@ -47,28 +46,28 @@ const Header: FC = () => {
           }`}
         >
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
-            <Link legacyBehavior href="/">
+            <Link legacyBehavior href="#experience">
               <a className="md:px-6 lg:px-3 hover:text-secondary text-black duration-500 text-base lg:text-lg">
-                About Me
+                Experience
               </a>
             </Link>
           </li>
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
-            <Link legacyBehavior href="">
+            <Link legacyBehavior href="#services">
               <a className="md:px-6 lg:px-3 hover:text-secondary text-black duration-500 text-base lg:text-lg">
                 Services
               </a>
             </Link>
           </li>
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 mb-7 mt-0 font-semibold font-sans">
-            <Link legacyBehavior href="/faqs">
+            <Link legacyBehavior href="#projects">
               <a className="md:px-6 lg:px-3 hover:text-secondary text-black duration-500 text-base lg:text-lg">
                 Projects
               </a>
             </Link>
           </li>
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
-            <Link legacyBehavior href="">
+            <Link legacyBehavior href="#contact-us">
               <a className="md:px-6 lg:px-3 hover:text-secondary text-black duration-500 text-base lg:text-lg">
                 Contact
               </a>

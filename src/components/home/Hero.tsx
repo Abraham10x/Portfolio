@@ -22,10 +22,9 @@ const Hero: FC = () => {
             </h1>
             <p className="text-base text-black sm:text-xl lg:text-2xl text-text-300 mt-4 lg:mt-8">
               I'm a software developer with a passion for creating intuitive and
-              efficient technology solutions. I have a strong foundation in
-              developing and maintaining web and mobile applications. I thrive
-              in collaborative environments, working with cross-functional teams
-              to bring projects from concept to launch
+              efficient technology solutions. I thrive in collaborative
+              environments, working with cross-functional teams to bring
+              projects from concept to launch.
             </p>
             <div className="flex sm:flex-row mt-8 gap-6">
               <Button className="bg-secondary hover:bg-secondary/70 hover:scale-110 transition delay-150 duration-300 ease-in-out font-semibold text-white px-8 sm:px-11 py-3 leading-7 text-lg sm:text-xl rounded-full">
@@ -48,28 +47,28 @@ const Hero: FC = () => {
                 height={600}
               />
               <Image
-                className="w-6 sm:w-12 absolute top-12 sm:top-20 left-16 sm:left-44 lg:left-56"
+                className="w-6 sm:w-12 absolute top-12 sm:top-20 left-16 sm:left-44 lg:left-16 xl:left-28 2xl:left-56"
                 src="/img/hero/figma.svg"
                 alt="figma logo"
                 width={35}
                 height={35}
               />
               <Image
-                className="absolute w-10 sm:w-16 top-12 sm:top-24 right-16 sm:right-40 lg:right-28"
+                className="absolute w-10 sm:w-16 top-12 sm:top-24 right-16 sm:right-40 lg:right-16 xl:right-28"
                 src="/img/hero/react.svg"
                 alt="react logo"
                 width={55}
                 height={55}
               />
               <Image
-                className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 left-8 sm:left-32 lg:left-40"
+                className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 left-8 sm:left-32 lg:left-16 2xl:left-40"
                 src="/img/hero/typescript.svg"
                 alt="typescript logo"
                 width={50}
                 height={50}
               />
               <Image
-                className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 right-10 sm:right-36 lg:right-28"
+                className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 right-10 sm:right-36 lg:right-20 xl:right-28"
                 src="/img/hero/javascript.svg"
                 alt="javascript logo"
                 width={50}

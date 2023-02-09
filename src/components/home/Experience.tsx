@@ -5,7 +5,7 @@ import Tabs from "./Tabs";
 
 const Experience: FC = () => {
   return (
-    <div className="bg-white py-28">
+    <div className="bg-white py-28" id="experience">
       <div className="container pt-12 px-5 sm:px-10 pb-8 2xl:px-0 mx-auto mt-0 sm:mt-10">
         <h3 className="text-black capitalize text-left font-bold text-3xl sm:text-4xl lg:text-5xl">
           where I've{" "}

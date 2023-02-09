@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { FC, useState, useRef } from "react";
+import { FC, useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { SubmitButton } from "./Button";
 
 const Form: FC = () => {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
   const [success, setSucess] = useState("");
   const initialValues = {
     fullname: "",
@@ -17,7 +18,6 @@ const Form: FC = () => {
 
   const validate = (values: any) => {
     const errors: any = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.fullname) {
       errors.fullname = "Full Name is required";
     } else if (values.fullname.length < 2) {
@@ -34,15 +34,7 @@ const Form: FC = () => {
     return errors;
   };
 
-  function handleChange(e: { target: { name: any; value: any } }) {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  }
-
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    setFormErrors(validate(formData));
-    setValid(true);
+  const sendEmail = async () => {
     emailjs
       .sendForm(
         "service_dkzosll",
@@ -53,14 +45,30 @@ const Form: FC = () => {
       .then(
         (result) => {
           setSucess(result.text);
+          console.log(result.text);
         },
         (error) => {
           console.log(error.text);
         }
       );
-    if (Object.keys(formErrors).length === 0 && valid) {
-      setFormData(initialValues);
+    setFormData(initialValues);
+  };
+
+  function handleChange(e: { target: { name: any; value: any } }) {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  }
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setFormErrors(validate(formData));
+    setValid(true);
+    if (formData.fullname && formData.email && formData.message) {
+      if (formData.fullname.length <= 20 && regex.test(formData.email)) {
+        sendEmail();
+      }
     }
+    console.log(formErrors);
   };
 
   return (

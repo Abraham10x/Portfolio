@@ -86,7 +86,7 @@ const Services: FC = () => {
     },
   ];
   return (
-    <div className="bg-primary-light py-10">
+    <div className="bg-primary-light py-10" id="services">
       <div className="container py-24 px-5 sm:px-10 pb-8 2xl:px-0 mx-auto mt-0 sm:mt-10">
         <div className="flex flex-col lg:flex-row justify-between mt-5 gap-y-20 gap-x-28">
           <div className="flex flex-col basis-1/2">

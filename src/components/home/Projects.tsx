@@ -4,7 +4,7 @@ import AllWorks from "../general/AllWorks";
 
 const Projects: FC = () => {
   return (
-    <div className="bg-white py-32">
+    <div className="bg-white py-32" id="projects">
       <div className="container px-5 sm:px-10 pb-8 2xl:px-0 mx-auto mt-0 sm:mt-10">
         <h3 className="text-black capitalize font-bold text-3xl sm:text-4xl lg:text-5xl text-center">
           Let’s have a look at my <br className="hidden sm:inline-block" />
