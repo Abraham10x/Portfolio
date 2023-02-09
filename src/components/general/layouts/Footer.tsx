@@ -19,7 +19,7 @@ const Footer: FC = () => {
               </div>
             </figure>
             <p className="text-black text-left font-normal font-serif text-base sm:text-lg lg:text-xl mt-12 w-full xl:w-[80%]">
-              My goal is to build long-lasting relationships with people, aand
+              My goal is to build long-lasting relationships with people, and
               provide the users with exceptional service and delivering results
               that exceed their expectations.
             </p>
