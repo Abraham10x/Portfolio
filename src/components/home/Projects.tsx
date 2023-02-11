@@ -13,7 +13,7 @@ const Projects: FC = () => {
             Projects{" "}
           </span>
         </h3>
-        <p className="text-black text-base sm:text-xl lg:text-2xl my-3 text-center w-full sm:w-[65%] lg:w-3/5 pt-4 mx-auto">
+        <p className="text-black text-base sm:text-xl lg:text-2xl my-3 text-center w-full lg:w-3/5 pt-4 mx-auto">
           I have extensive experience in delivering high-quality software
           solutions for a variety of industries, I pride myself on my ability to
           understand project requirements, analyze and design effective

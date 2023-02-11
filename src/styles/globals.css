@@ -111,10 +111,49 @@ swiper-container {
   padding: 0 0 2rem 0 !important;
 }
 
+.swiper-button-next:after {
+  content: url("../../public/img/arrow-right.svg") !important;
+  position: absolute;
+  font-size: 1rem;
+  right: -0.6rem;
+}
+
+.swiper-button-prev:after {
+  content: url("../../public/img/arrow-left.svg") !important;
+  position: absolute;
+  left: -0.6rem;
+}
+
 @media screen and (min-width: 768px) {
   .swiper,
   swiper-container {
     padding: 0 0 4rem 0 !important;
+  }
+
+  .swiper-button-next:after {
+    content: url("../../public/img/arrow-right.svg") !important;
+    position: absolute;
+    right: -0.6rem;
+  }
+
+  .swiper-button-prev:after {
+    content: url("../../public/img/arrow-left.svg") !important;
+    position: absolute;
+    left: -0.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .swiper-button-next:after {
+    content: url("../../public/img/arrow-right.svg") !important;
+    position: absolute;
+    right: 0.1rem;
+  }
+
+  .swiper-button-prev:after {
+    content: url("../../public/img/arrow-left.svg") !important;
+    position: absolute;
+    left: 0.1rem;
   }
 }
 

@@ -59,7 +59,7 @@ const Testimonial: FC = () => {
         >
           {TestimonialData.map((data) => (
             <SwiperSlide key={data.id}>
-              <div className="p-8 border border-white bg-white rounded-xl flex flex-col gap-6 mt-20 mx-5 sm:mx-1 xl:mx-3 2xl:mx-10">
+              <div className="p-8 border border-white bg-white h-[21.6rem] sm:h-[25rem] relative rounded-xl flex flex-col gap-6 mt-20 mx-5 sm:mx-1 xl:mx-3 2xl:mx-10">
                 <div className="flex flex-row gap-4">
                   <Image
                     className=""
@@ -73,12 +73,13 @@ const Testimonial: FC = () => {
                 <p className="text-xs sm:text-sm lg:text-base capitalize text-black">
                   {data.text}
                 </p>
-                <div className="flex flex-row">
+                <div className="flex flex-row absolute bottom-5">
                   <Image
                     src={data.image}
                     alt={data.username}
-                    width={80}
-                    height={80}
+                    width={70}
+                    height={70}
+                    className="rounded-full"
                   />
                   <div className="flex-col ml-4 my-auto">
                     <h4 className="text-secondary font-bold text-sm sm:text-base lg:text-lg">

@@ -245,6 +245,7 @@ const RecentWork: FC = () => {
                           {data.collaborators.map((people, index) => (
                             <div key={index} className="flex flex-row">
                               <Image
+                                className="rounded-full"
                                 src={people.image}
                                 alt={people.username}
                                 width={50}

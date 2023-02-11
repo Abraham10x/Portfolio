@@ -50,14 +50,14 @@ export default [
     collaborators: [
       {
         id: 1,
-        image: "/img/user-1.svg",
+        image: "/img/abraham.png",
         username: "Ameh Abraham",
         role: "Front-end developer",
         linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
       },
       {
         id: 2,
-        image: "/img/user-1.svg",
+        image: "/img/collaborators/isaac-agada.jpg",
         username: "Isaac Agada",
         role: "CEO StableDoc",
         linkedin: "https://www.linkedin.com/in/isaac-agada-965b23113/",
@@ -71,7 +71,6 @@ export default [
     slider: [
       "/img/projects/recents/minerva-hub.png",
       "/img/projects/recents/min-about.png",
-      "/img/projects/recents/min-careers.png",
       "/img/projects/recents/min-product.png",
     ],
     title: "Minerva Hub",
@@ -120,21 +119,21 @@ export default [
     collaborators: [
       {
         id: 1,
-        image: "/img/user-1.svg",
+        image: "/img/abraham.png",
         username: "Ameh Abraham",
         role: "Front-end developer",
         linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
       },
       {
         id: 2,
-        image: "/img/user-1.svg",
+        image: "/img/collaborators/john-idoko.jpg",
         username: "John Idoko",
-        role: "Full Stack Web Developer",
+        role: "Full Stack Developer",
         linkedin: "https://www.linkedin.com/in/john-idoko-474251218/",
       },
       {
         id: 3,
-        image: "/img/user-1.svg",
+        image: "/img/collaborators/anunobi-kelechi.jpg",
         username: "Anunobi Kelechi",
         role: "CEO Minerva hub",
         linkedin: "https://www.linkedin.com/in/anunobik/",
@@ -192,14 +191,14 @@ export default [
     collaborators: [
       {
         id: 1,
-        image: "/img/user-1.svg",
+        image: "/img/abraham.png",
         username: "Ameh Abraham",
         role: "Front-end developer",
         linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
       },
       {
         id: 2,
-        image: "/img/user-1.svg",
+        image: "/img/collaborators/joseph-chonkea.jpg",
         username: "Joseph Chonkea",
         role: "Content Creator",
         linkedin: "https://www.linkedin.com/in/chonkeajoseph/",
