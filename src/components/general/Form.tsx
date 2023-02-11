@@ -68,7 +68,6 @@ const Form: FC = () => {
         sendEmail();
       }
     }
-    console.log(formErrors);
   };
 
   return (

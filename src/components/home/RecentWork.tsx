@@ -245,11 +245,11 @@ const RecentWork: FC = () => {
                           {data.collaborators.map((people, index) => (
                             <div key={index} className="flex flex-row">
                               <Image
-                                className="rounded-full"
+                                className="rounded-full object-cover"
                                 src={people.image}
                                 alt={people.username}
-                                width={50}
-                                height={50}
+                                width={70}
+                                height={70}
                               />
                               <div className="flex-col ml-4 my-auto">
                                 <Link legacyBehavior href={people.linkedin}>

@@ -1,18 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useState } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import WorksData from "./WorksData";
+import { Button } from "./Button";
 
 const RecentWork: FC = () => {
+  const display = WorksData.length;
+  const [visible, setVisible] = useState(6);
+  const Loadmore = () => {
+    setVisible(visible + 9);
+  };
+
+  const Loadless = () => {
+    setVisible(visible - 9);
+  };
   return (
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 justify-center mt-24 relative">
-        {WorksData.map((data) => (
+        {WorksData.slice(0, visible).map((data) => (
           <>
             <div
               key={data.id}
@@ -50,17 +60,32 @@ const RecentWork: FC = () => {
                         </a>
                       </Link>
                     )}
-                    <Link legacyBehavior href={data.live}>
-                      <a target="_blank" rel="noopener noreferrer">
-                        <Image
-                          className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
-                          src="/img/up-right-arrow.svg"
-                          alt="icon"
-                          width={40}
-                          height={40}
-                        />
-                      </a>
-                    </Link>
+                    {data.figma && (
+                      <Link legacyBehavior href={data.figma}>
+                        <a target="_blank" rel="noopener noreferrer">
+                          <Image
+                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                            src="/img/tools/figma.svg"
+                            alt="icon"
+                            width={25}
+                            height={25}
+                          />
+                        </a>
+                      </Link>
+                    )}
+                    {data.live && (
+                      <Link legacyBehavior href={data.live}>
+                        <a target="_blank" rel="noopener noreferrer">
+                          <Image
+                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                            src="/img/up-right-arrow.svg"
+                            alt="icon"
+                            width={40}
+                            height={40}
+                          />
+                        </a>
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
@@ -165,17 +190,32 @@ const RecentWork: FC = () => {
                                 </a>
                               </Link>
                             )}
-                            <Link legacyBehavior href={data.live}>
-                              <a target="_blank" rel="noopener noreferrer">
-                                <Image
-                                  className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
-                                  src="/img/up-right-arrow.svg"
-                                  alt="icon"
-                                  width={40}
-                                  height={40}
-                                />
-                              </a>
-                            </Link>
+                            {data.figma && (
+                              <Link legacyBehavior href={data.figma}>
+                                <a target="_blank" rel="noopener noreferrer">
+                                  <Image
+                                    className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                                    src="/img/tools/figma.svg"
+                                    alt="icon"
+                                    width={25}
+                                    height={25}
+                                  />
+                                </a>
+                              </Link>
+                            )}
+                            {data.live && (
+                              <Link legacyBehavior href={data.live}>
+                                <a target="_blank" rel="noopener noreferrer">
+                                  <Image
+                                    className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                                    src="/img/up-right-arrow.svg"
+                                    alt="icon"
+                                    width={40}
+                                    height={40}
+                                  />
+                                </a>
+                              </Link>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -195,7 +235,7 @@ const RecentWork: FC = () => {
                           {data.tools.map((tool, index) => (
                             <div
                               key={index}
-                              className="bg-white border border-primary hover:text-white hover:bg-primary transition-all delay-150 duration-300 ease-in-out flex flex-row justify-center rounded-md gap-3 w-44 py-2"
+                              className="bg-white border border-primary hover:text-white text-black hover:bg-primary transition-all delay-150 duration-300 ease-in-out flex flex-row justify-center rounded-md gap-3 w-44 py-2"
                             >
                               <Image
                                 src={tool.image}
@@ -203,7 +243,7 @@ const RecentWork: FC = () => {
                                 width={40}
                                 height={40}
                               />
-                              <p className="text-base sm:text-lg my-auto text-black">
+                              <p className="text-base sm:text-lg my-auto">
                                 {tool.title}
                               </p>
                             </div>
@@ -219,10 +259,11 @@ const RecentWork: FC = () => {
                           {data.collaborators.map((people, index) => (
                             <div key={index} className="flex flex-row">
                               <Image
+                                className="rounded-full object-cover"
                                 src={people.image}
                                 alt={people.username}
-                                width={50}
-                                height={50}
+                                width={70}
+                                height={70}
                               />
                               <div className="flex-col ml-4 my-auto">
                                 <Link legacyBehavior href={people.linkedin}>
@@ -243,20 +284,50 @@ const RecentWork: FC = () => {
                     </div>
                   </div>
                   <div className="hs-dropdown-toggle flex justify-end mt-5 items-center gap-x-2 py-5 px-5 sm:px-10 border-t border-gray-300">
-                    <a
-                      className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent hover:scale-110 hover:-translate-y-1 delay-150 duration-300 ease-in-out font-semibold bg-secondary text-white hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition-all text-sm0"
-                      href={data.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Live Site
-                    </a>
+                    {data.live ? (
+                      <a
+                        className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent hover:scale-110 hover:-translate-y-1 delay-150 duration-300 ease-in-out font-semibold bg-secondary text-white hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition-all text-sm0"
+                        href={data.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live Site
+                      </a>
+                    ) : data.figma ? (
+                      <a
+                        className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent hover:scale-110 hover:-translate-y-1 delay-150 duration-300 ease-in-out font-semibold bg-secondary text-white hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition-all text-sm0"
+                        href={data.figma}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Design
+                      </a>
+                    ) : (
+                      <div></div>
+                    )}
                   </div>
                 </div>
               </div>
             </div>
           </>
         ))}
+      </div>
+      <div className="mx-auto flex justify-center mt-28">
+        {visible < display ? (
+          <Button
+            className="bg-secondary hover:bg-secondary/70 hover:scale-110 transition delay-150 duration-300 ease-in-out font-semibold text-white px-8 sm:px-11 py-3 leading-7 text-lg sm:text-xl rounded-md"
+            onClick={Loadmore}
+          >
+            Show More
+          </Button>
+        ) : (
+          <Button
+            className="bg-secondary hover:bg-secondary/70 hover:scale-110 transition delay-150 duration-300 ease-in-out font-semibold text-white px-8 sm:px-11 py-3 leading-7 text-lg sm:text-xl rounded-md"
+            onClick={Loadless}
+          >
+            Show Less
+          </Button>
+        )}
       </div>
     </div>
   );

@@ -59,7 +59,7 @@ const Testimonial: FC = () => {
         >
           {TestimonialData.map((data) => (
             <SwiperSlide key={data.id}>
-              <div className="p-8 border border-white bg-white h-[21.6rem] sm:h-[25rem] relative rounded-xl flex flex-col gap-6 mt-20 mx-5 sm:mx-1 xl:mx-3 2xl:mx-10">
+              <div className="p-8 border border-white bg-white h-[21.6rem] sm:h-[23.8rem] lg:h-[25rem] relative rounded-xl flex flex-col gap-6 mt-20 mx-5 sm:mx-1 xl:mx-3 2xl:mx-10">
                 <div className="flex flex-row gap-4">
                   <Image
                     className=""

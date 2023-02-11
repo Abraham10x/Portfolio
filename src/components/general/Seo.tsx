@@ -4,13 +4,14 @@ import { useRouter } from "next/router";
 
 // default meta
 const defaultMeta = {
-  title: "Minerva Hub",
-  siteName: "Minerva Hub",
-  description: "Building a world full of solutions",
-  url: "https://myminerva.com",
+  title: "Ameh Abraham",
+  siteName: "Ameh Abraham",
+  description:
+    "I'm a software developer with a passion for creating intuitive and efficient technology solutions.",
+  url: "https://amehabraham.netlify.app/",
   type: "website",
   robots: "follow, index",
-  image: "",
+  image: "/img/logo.svg",
 };
 
 interface SeoProps {
