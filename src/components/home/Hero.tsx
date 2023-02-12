@@ -68,7 +68,7 @@ const Hero: FC = () => {
                 height={50}
               />
               <Image
-                className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 right-10 sm:right-36 lg:right-20 xl:right-28"
+                className="absolute w-9 sm:w-16 bottom-32 sm:bottom-60 right-10 sm:right-36 lg:right-20 xl:right-16"
                 src="/img/hero/javascript.svg"
                 alt="javascript logo"
                 width={50}

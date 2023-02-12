@@ -102,16 +102,11 @@ export default [
       },
       {
         id: 3,
-        image: "/img/tools/react.svg",
-        title: "React.js",
-      },
-      {
-        id: 4,
         image: "/img/tools/tailwind.svg",
         title: "Tailwind",
       },
       {
-        id: 5,
+        id: 4,
         image: "/img/tools/figma.svg",
         title: "Figma",
       },

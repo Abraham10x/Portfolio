@@ -37,55 +37,67 @@ const RecentWork: FC = () => {
                   width={500}
                   height={500}
                 />
-                <div className="flex flex-row justify-between px-3">
-                  <div className="flex flex-col gap-1">
-                    <p className="text-xl lg:text-2xl font-bold text-black">
-                      {data.title}
-                    </p>
-                    <p className="text-base sm:text-lg text-black">
-                      {data.industry}
-                    </p>
+                <div className="flex flex-col gap-2">
+                  <div className="flex flex-row justify-between px-3">
+                    <div className="flex flex-col gap-1">
+                      <p className="text-xl lg:text-2xl font-bold text-black">
+                        {data.title}
+                      </p>
+                      <p className="text-base sm:text-lg text-black">
+                        {data.industry}
+                      </p>
+                    </div>
+                    <div className="flex flex-row gap-4">
+                      {data.github && (
+                        <Link legacyBehavior href={data.github}>
+                          <a target="_blank" rel="noopener noreferrer">
+                            <Image
+                              className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                              src="/img/tools/github.svg"
+                              alt="icon"
+                              width={40}
+                              height={40}
+                            />
+                          </a>
+                        </Link>
+                      )}
+                      {data.figma && (
+                        <Link legacyBehavior href={data.figma}>
+                          <a target="_blank" rel="noopener noreferrer">
+                            <Image
+                              className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                              src="/img/tools/figma.svg"
+                              alt="icon"
+                              width={25}
+                              height={25}
+                            />
+                          </a>
+                        </Link>
+                      )}
+                      {data.live && (
+                        <Link legacyBehavior href={data.live}>
+                          <a target="_blank" rel="noopener noreferrer">
+                            <Image
+                              className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                              src="/img/up-right-arrow.svg"
+                              alt="icon"
+                              width={40}
+                              height={40}
+                            />
+                          </a>
+                        </Link>
+                      )}
+                    </div>
                   </div>
-                  <div className="flex flex-row gap-4">
-                    {data.github && (
-                      <Link legacyBehavior href={data.github}>
-                        <a target="_blank" rel="noopener noreferrer">
-                          <Image
-                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
-                            src="/img/tools/github.svg"
-                            alt="icon"
-                            width={40}
-                            height={40}
-                          />
-                        </a>
-                      </Link>
-                    )}
-                    {data.figma && (
-                      <Link legacyBehavior href={data.figma}>
-                        <a target="_blank" rel="noopener noreferrer">
-                          <Image
-                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
-                            src="/img/tools/figma.svg"
-                            alt="icon"
-                            width={25}
-                            height={25}
-                          />
-                        </a>
-                      </Link>
-                    )}
-                    {data.live && (
-                      <Link legacyBehavior href={data.live}>
-                        <a target="_blank" rel="noopener noreferrer">
-                          <Image
-                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
-                            src="/img/up-right-arrow.svg"
-                            alt="icon"
-                            width={40}
-                            height={40}
-                          />
-                        </a>
-                      </Link>
-                    )}
+                  <div className="flex flex-row gap-4 px-3">
+                    {data.tools.map((tech) => (
+                      <p
+                        key={tech.id}
+                        className="text-gray-500 text-sm sm:text-base"
+                      >
+                        {tech.title}
+                      </p>
+                    ))}
                   </div>
                 </div>
               </div>

@@ -99,6 +99,11 @@ export default [
         image: "/img/tools/material-ui.svg",
         title: "Material UI",
       },
+      {
+        id: 4,
+        image: "/img/tools/figma.svg",
+        title: "Figma",
+      },
     ],
     collaborators: [
       {
@@ -166,12 +171,12 @@ export default [
   },
   {
     id: 4,
-    mainimage: "/img/projects/women-store.png",
-    modal: "hs-commerce-online-code",
+    mainimage: "/img/projects/web/portfolio.png",
+    modal: "hs-portfolio-project",
     slider: [
-      "/img/projects/men-store.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
+      "/img/projects/web/portfolio.png",
+      "/img/projects/web/port-hero.png",
+      "/img/projects/web/port-modal.png",
     ],
     title: "Portfolio",
     industry: "Software Dev",
@@ -181,30 +186,34 @@ export default [
       "https://www.figma.com/file/WrXpha8g6RPNKJJ7JarFsL/portfolio?node-id=1%3A2&t=fwT02vz8tbjfMSxc-1",
     summary: (
       <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+        I'm a software developer with a passion for creating intuitive and
+        efficient technology solutions. I thrive in collaborative environments,{" "}
+        <br />
+        working with cross-functional teams to bring projects from concept to
+        launch. My goal is to continuously learn and stay current with the
+        latest technologies.
       </p>
     ),
     tools: [
       {
         id: 1,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
+        image: "/img/tools/typescript.svg",
+        title: "TypeScript",
       },
       {
         id: 2,
-        image: "/img/tools/react.svg",
-        title: "React",
+        image: "/img/tools/next.svg",
+        title: "Next",
       },
       {
         id: 3,
-        image: "/img/tools/material-ui.svg",
-        title: "Material UI",
+        image: "/img/tools/tailwind.svg",
+        title: "Tailwind",
+      },
+      {
+        id: 4,
+        image: "/img/tools/figma.svg",
+        title: "Figma",
       },
     ],
     collaborators: [
@@ -234,13 +243,11 @@ export default [
       "https://www.figma.com/file/p7LWvKjxztvGJwQmZid9HV/Vaneto?node-id=328%3A106&t=07fMxdzWEJod5qyf-1",
     summary: (
       <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+        This is a UI design I was able to cook of course I also had the
+        opportunity to collaborate with a senior designer on this one. <br />{" "}
+        The goal of this project was to learn more about UI design and also to
+        implement a store using redux as a state management tool. although I
+        haven't built the project yet, but I will jump into it soon enough.
       </p>
     ),
     tools: [
@@ -268,31 +275,39 @@ export default [
         role: "Front-end developer",
         linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
       },
+      {
+        id: 2,
+        image: "/img/collaborators/b-man.jpg",
+        username: "Kingsley Mbilitem",
+        role: "UI/UX designer",
+        linkedin: "https://www.linkedin.com/in/kingsleymbilitem/",
+      },
     ],
   },
   {
     id: 6,
-    mainimage: "/img/projects/men-store.png",
-    modal: "hs-commerce-online-code",
+    mainimage: "/img/projects/web/partycoo.jpg",
+    modal: "hs-partycoo-app",
     slider: [
-      "/img/projects/men-store.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
+      "/img/projects/web/partycoo.jpg",
+      "/img/projects/web/party-home.jpg",
+      "/img/projects/web/party-hero.jpg",
     ],
     title: "Partycoo",
     industry: "Entertainment",
     github: "",
-    live: "https://tony-stark.netlify.app/",
+    live: "https://partycoo.com/",
     figma: "",
     summary: (
       <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+        Parties are always fun until you have to plan one all by yourself.
+        Failure to plan effectively for a party might make the entire event a
+        flop.
+        <br /> Partycoo is a one-stop-shop for your event’s needs, without
+        hassles or disappointments. A lifestyle app for users to plan and
+        deliver a successful event Partycoo offers a no-stress,
+        budget-efficient, ready-made & timely party solution, compared to the
+        traditional approach.
       </p>
     ),
     tools: [
@@ -315,10 +330,10 @@ export default [
     collaborators: [
       {
         id: 1,
-        image: "/img/abraham.png",
-        username: "Ameh Abraham",
-        role: "Front-end developer",
-        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+        image: "/img/hashtag.svg",
+        username: "Hashtag Team",
+        role: "Software Solutions",
+        linkedin: "https://www.linkedin.com/company/hashtagng/",
       },
     ],
   },
@@ -384,7 +399,7 @@ export default [
   {
     id: 8,
     mainimage: "/img/projects/men-store.png",
-    modal: "hs-commerce-online-code",
+    modal: "hs-fcas-project",
     slider: [
       "/img/projects/men-store.png",
       "/img/projects/women-store.png",
@@ -414,13 +429,13 @@ export default [
       },
       {
         id: 2,
-        image: "/img/tools/react.svg",
-        title: "React",
+        image: "/img/tools/next.svg",
+        title: "Next",
       },
       {
         id: 3,
-        image: "/img/tools/material-ui.svg",
-        title: "Material UI",
+        image: "/img/tools/tailwind.svg",
+        title: "Tailwind",
       },
     ],
     collaborators: [
@@ -435,44 +450,40 @@ export default [
   },
   {
     id: 9,
-    mainimage: "/img/projects/women-store.png",
-    modal: "hs-commerce-online-code",
+    mainimage: "/img/projects/web/tip-calculator.jpg",
+    modal: "hs-tip-calculator",
     slider: [
-      "/img/projects/men-store.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
+      "/img/projects/web/tip-calculator.jpg",
+      "/img/projects/web/tip-active.jpg",
+      "/img/projects/web/tip-mobile.jpg",
     ],
     title: "Tip Calculator",
-    industry: "Utility",
+    industry: "Finance",
     github: "https://github.com/Abraham10x/Tip-Calculator",
     live: "https://tony-stark.netlify.app/",
     figma: "",
     summary: (
       <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+        This challenge from <em>Front End Mentor</em> was to build out this tip
+        calculator app and get it looking as close to the design as possible.
+        <br />
       </p>
     ),
     tools: [
       {
         id: 1,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
+        image: "/img/tools/html.svg",
+        title: "HTML",
       },
       {
         id: 2,
-        image: "/img/tools/react.svg",
-        title: "React",
+        image: "/img/tools/css.svg",
+        title: "CSS",
       },
       {
         id: 3,
-        image: "/img/tools/material-ui.svg",
-        title: "Material UI",
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
       },
     ],
     collaborators: [
@@ -488,16 +499,16 @@ export default [
   {
     id: 10,
     mainimage: "/img/projects/willow-agency.png",
-    modal: "hs-commerce-online-code",
+    modal: "hs-password-generator",
     slider: [
       "/img/projects/men-store.png",
       "/img/projects/women-store.png",
       "/img/projects/willow-agency.png",
     ],
     title: "Password Generator",
-    industry: "Utility",
-    github: "",
-    live: "https://tony-stark.netlify.app/",
+    industry: "Security",
+    github: "https://github.com/Abraham10x/Random-Password-Generator",
+    live: "https://heroic-crepe-c52247.netlify.app/",
     figma: "",
     summary: (
       <p className="text-black">
@@ -513,18 +524,18 @@ export default [
     tools: [
       {
         id: 1,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
+        image: "/img/tools/html.svg",
+        title: "HTML",
       },
       {
         id: 2,
-        image: "/img/tools/react.svg",
-        title: "React",
+        image: "/img/tools/css.svg",
+        title: "CSS",
       },
       {
         id: 3,
-        image: "/img/tools/material-ui.svg",
-        title: "Material UI",
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
       },
     ],
     collaborators: [
@@ -540,7 +551,7 @@ export default [
   {
     id: 11,
     mainimage: "/img/projects/women-store.png",
-    modal: "hs-commerce-online-code",
+    modal: "hs-unit-converter",
     slider: [
       "/img/projects/men-store.png",
       "/img/projects/women-store.png",
@@ -548,8 +559,8 @@ export default [
     ],
     title: "Unit Converter",
     industry: "Utility",
-    github: "",
-    live: "https://tony-stark.netlify.app/",
+    github: "https://github.com/Abraham10x/Unit-Converter",
+    live: "https://gorgeous-gecko-0b6105.netlify.app/",
     figma: "",
     summary: (
       <p className="text-black">
@@ -565,18 +576,18 @@ export default [
     tools: [
       {
         id: 1,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
+        image: "/img/tools/html.svg",
+        title: "HTML",
       },
       {
         id: 2,
-        image: "/img/tools/react.svg",
-        title: "React",
+        image: "/img/tools/css.svg",
+        title: "CSS",
       },
       {
         id: 3,
-        image: "/img/tools/material-ui.svg",
-        title: "Material UI",
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
       },
     ],
     collaborators: [
@@ -591,44 +602,41 @@ export default [
   },
   {
     id: 12,
-    mainimage: "/img/projects/men-store.png",
-    modal: "hs-commerce-online-code",
+    mainimage: "/img/projects/web/invoice.png",
+    modal: "hs-invoice-generator",
     slider: [
-      "/img/projects/men-store.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
+      "/img/projects/web/invoice.png",
+      "/img/projects/web/invoice-price.png",
+      "/img/projects/web/invoice-email.png",
     ],
     title: "Invoice Generator",
-    industry: "Utility",
-    github: "",
-    live: "https://tony-stark.netlify.app/",
+    industry: "Finance",
+    github: "https://github.com/Abraham10x/Invoice-Generator",
+    live: "https://remarkable-souffle-ec077b.netlify.app/",
     figma: "",
     summary: (
       <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+        This ia an invoice that generate price when button with specific items
+        are clicked on. Then the total price will be calculated at displayed to
+        the user. User can also delete an item from their list and sent the
+        invoice slip through email to anyone
       </p>
     ),
     tools: [
       {
         id: 1,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
+        image: "/img/tools/html.svg",
+        title: "HTML",
       },
       {
         id: 2,
-        image: "/img/tools/react.svg",
-        title: "React",
+        image: "/img/tools/css.svg",
+        title: "CSS",
       },
       {
         id: 3,
-        image: "/img/tools/material-ui.svg",
-        title: "Material UI",
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
       },
     ],
     collaborators: [
@@ -643,44 +651,105 @@ export default [
   },
   {
     id: 13,
-    mainimage: "/img/projects/men-store.png",
-    modal: "hs-commerce-online-code",
+    mainimage: "/img/projects/web/color-scheme.png",
+    modal: "hs-color-scheme-generator",
     slider: [
-      "/img/projects/men-store.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
+      "/img/projects/web/color-scheme.png",
+      "/img/projects/web/color-select.png",
+      "/img/projects/web/color.png",
     ],
     title: "Color Scheme Generator",
     industry: "Utility",
-    github: "",
-    live: "https://tony-stark.netlify.app/",
+    github: "https://github.com/Abraham10x/Color-Scheme-Generator",
+    live: "https://boisterous-dasik-10084a.netlify.app/",
     figma: "",
     summary: (
       <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+        here is a color scheme generator project with the to select a color from
+        the color input then choose the color scheme you want then click on the
+        get color button. which will activate the color scheme API. which will
+        generator 5 colors depending on you data.
       </p>
     ),
     tools: [
       {
         id: 1,
+        image: "/img/tools/html.svg",
+        title: "HTML",
+      },
+      {
+        id: 2,
+        image: "/img/tools/css.svg",
+        title: "CSS",
+      },
+      {
+        id: 3,
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
+      },
+    ],
+    collaborators: [
+      {
+        id: 1,
+        image: "/img/abraham.png",
+        username: "Ameh Abraham",
+        role: "Front-end developer",
+        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+      },
+    ],
+  },
+  {
+    id: 14,
+    mainimage: "/img/projects/web/tour9ja.png",
+    modal: "hs-tour9ja-code",
+    slider: [
+      "/img/projects/web/tour9ja.png",
+      "/img/projects/web/tour9ja-hero.png",
+      "/img/projects/web/tour9ja-login.png",
+    ],
+    title: "Tour9ja",
+    industry: "Tourism",
+    github: "https://github.com/Abraham10x/Tour9ja",
+    live: "",
+    figma:
+      "https://www.figma.com/file/DF4BkHLlwmrnaI3ZWyeFE2/Tour9ja?node-id=0%3A1&t=01d429r9EFWHlpr2-1",
+    summary: (
+      <p className="text-black">
+        This was the very first client web project I have ever worked on. this
+        was meant to be a school project. create a full-stack tourism platform.
+        <br /> This was a very tricky project because of the deadline I had only
+        one week to build the entire thing. so please bare with me on some of
+        the design flaws.
+        <br /> I was able to complete the project right on time and I was not
+        able to host the project on a server I couldn't find any available free
+        space but when I do I will sure host it.
+      </p>
+    ),
+    tools: [
+      {
+        id: 1,
+        image: "/img/tools/html.svg",
+        title: "HTML",
+      },
+      {
+        id: 2,
+        image: "/img/tools/css.svg",
+        title: "CSS",
+      },
+      {
+        id: 3,
         image: "/img/tools/javascript.svg",
         title: "JavaScript",
       },
       {
-        id: 2,
-        image: "/img/tools/react.svg",
-        title: "React",
+        id: 4,
+        image: "/img/tools/php.svg",
+        title: "PHP",
       },
       {
-        id: 3,
-        image: "/img/tools/material-ui.svg",
-        title: "Material UI",
+        id: 5,
+        image: "/img/tools/figma.svg",
+        title: "Figma",
       },
     ],
     collaborators: [

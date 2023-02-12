@@ -35,7 +35,7 @@ const Projects: FC = () => {
             aria-controls="pills-with-brand-color-1"
             role="tab"
           >
-            All
+            Web Dev
           </button>
           <button
             type="button"
@@ -43,26 +43,6 @@ const Projects: FC = () => {
             id="pills-with-brand-color-item-2"
             data-hs-tab="#pills-with-brand-color-2"
             aria-controls="pills-with-brand-color-2"
-            role="tab"
-          >
-            UI/UX Designs
-          </button>
-          <button
-            type="button"
-            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm sm:text-base font-medium text-center text-black rounded-lg  hover:text-secondary"
-            id="pills-with-brand-color-item-3"
-            data-hs-tab="#pills-with-brand-color-3"
-            aria-controls="pills-with-brand-color-3"
-            role="tab"
-          >
-            Web Dev
-          </button>
-          <button
-            type="button"
-            className="hs-tab-active:bg-secondary border border-secondary hs-tab-active:text-white py-3 px-4 inline-flex items-center gap-2 bg-transparent text-sm sm:text-base font-medium text-center text-black rounded-lg  hover:text-secondary"
-            id="pills-with-brand-color-item-4"
-            data-hs-tab="#pills-with-brand-color-4"
-            aria-controls="pills-with-brand-color-4"
             role="tab"
           >
             Mobile App Dev
@@ -87,34 +67,6 @@ const Projects: FC = () => {
               This is the{" "}
               <em className="font-semibold text-gray-800 dark:text-gray-200">
                 second
-              </em>{" "}
-              item's tab body.
-            </p>
-          </div>
-          <div
-            id="pills-with-brand-color-3"
-            className="hidden"
-            role="tabpanel"
-            aria-labelledby="pills-with-brand-color-item-3"
-          >
-            <p className="text-black dark:text-gray-400">
-              This is the{" "}
-              <em className="font-semibold text-gray-800 dark:text-gray-200">
-                third
-              </em>{" "}
-              item's tab body.
-            </p>
-          </div>
-          <div
-            id="pills-with-brand-color-4"
-            className="hidden"
-            role="tabpanel"
-            aria-labelledby="pills-with-brand-color-item-4"
-          >
-            <p className="text-black dark:text-gray-400">
-              This is the{" "}
-              <em className="font-semibold text-gray-800 dark:text-gray-200">
-                fourth
               </em>{" "}
               item's tab body.
             </p>
