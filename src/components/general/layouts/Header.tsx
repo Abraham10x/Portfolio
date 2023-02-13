@@ -75,8 +75,17 @@ const Header: FC = () => {
             </Link>
           </li>
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
-            <Link legacyBehavior href="" className="xl:mx-8 xl:ml-36">
-              <a className="pointer md:ml-5 xl:ml-14 text-center text-white font-semibold rounded focus:outline-none bg-secondary border-2 border-primary-light py-2 px-10 shadow-lg hover:bg-secondary/80 hover:scale-110 transition delay-150 duration-300 ease-in-out hover:border-secondary/80 ">
+            <Link
+              legacyBehavior
+              href="/resume/resume.pdf"
+              className="xl:mx-8 xl:ml-36"
+            >
+              <a
+                rel="noreferer noopener"
+                target="_blank"
+                type="application/pdf"
+                className="pointer md:ml-5 xl:ml-14 text-center text-white font-semibold rounded focus:outline-none bg-secondary border-2 border-primary-light py-2 px-10 shadow-lg hover:bg-secondary/80 hover:scale-110 transition delay-150 duration-300 ease-in-out hover:border-secondary/80 "
+              >
                 Resume
               </a>
             </Link>

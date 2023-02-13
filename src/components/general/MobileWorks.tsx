@@ -92,7 +92,7 @@ const MobileWork: FC = () => {
                   <div className="flex flex-row gap-4 px-3">
                     {data.tools.map((tech) => (
                       <p
-                        key={tech.id}
+                        key={tech.image}
                         className="text-gray-500 text-sm sm:text-base"
                       >
                         {tech.title}
@@ -166,8 +166,8 @@ const MobileWork: FC = () => {
                       modules={[Navigation, Pagination, Autoplay]}
                       className="mySwiper relative"
                     >
-                      {data.slider.map((image, index) => (
-                        <SwiperSlide key={index}>
+                      {data.slider.map((image) => (
+                        <SwiperSlide key={image}>
                           <div className="mt-0">
                             <div className="flex flex-row">
                               <Image
@@ -244,9 +244,9 @@ const MobileWork: FC = () => {
                           Technologies Used
                         </h3>
                         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 justify-start mt-1 gap-x-3 gap-y-5">
-                          {data.tools.map((tool, index) => (
+                          {data.tools.map((tool) => (
                             <div
-                              key={index}
+                              key={tool.title}
                               className="bg-white border border-primary hover:text-white text-black hover:bg-primary transition-all delay-150 duration-300 ease-in-out flex flex-row justify-center rounded-md gap-3 w-44 py-2"
                             >
                               <Image
@@ -268,8 +268,8 @@ const MobileWork: FC = () => {
                           Collaborators
                         </h3>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-start mt-1">
-                          {data.collaborators.map((people, index) => (
-                            <div key={index} className="flex flex-row">
+                          {data.collaborators.map((people) => (
+                            <div key={people.image} className="flex flex-row">
                               <Image
                                 className="rounded-full object-cover"
                                 src={people.image}

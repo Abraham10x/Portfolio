@@ -27,14 +27,24 @@ const Hero: FC = () => {
               projects from concept to launch.
             </p>
             <div className="flex sm:flex-row mt-8 gap-6">
-              <Button className="bg-secondary hover:bg-secondary/70 hover:scale-110 transition delay-150 duration-300 ease-in-out font-semibold text-white px-8 sm:px-11 py-3 leading-7 text-lg sm:text-xl rounded-full">
-                Hire Me
-              </Button>
-              <Button className="border border-primary hover:bg-primary/20 hover:scale-110 transition delay-150 duration-300 ease-in-out px-8 sm:px-11 py-3 text-black font-semibold leading-7 text-lg sm:text-xl rounded-full">
-                <Link legacyBehavior href="#contact-us">
-                  <a>Let's talk</a>
-                </Link>
-              </Button>
+              <Link href="/resume/resume.pdf" legacyBehavior>
+                <a
+                  rel="noreferer noopener"
+                  target="_blank"
+                  type="application/pdf"
+                >
+                  <Button className="bg-secondary hover:bg-secondary/70 hover:scale-110 transition delay-150 duration-300 ease-in-out font-semibold text-white px-8 sm:px-11 py-3 leading-7 text-lg sm:text-xl rounded-full">
+                    Hire Me
+                  </Button>
+                </a>
+              </Link>
+              <Link legacyBehavior href="#contact-us">
+                <a>
+                  <Button className="border border-primary hover:bg-primary/20 hover:scale-110 transition delay-150 duration-300 ease-in-out px-8 sm:px-11 py-3 text-black font-semibold leading-7 text-lg sm:text-xl rounded-full">
+                    Let's talk
+                  </Button>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="relative basis-[50%] flex justify-center lg:justify-end">
