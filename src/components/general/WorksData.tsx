@@ -408,7 +408,7 @@ export default [
     title: "FCAS",
     industry: "Law",
     github: "",
-    live: "https://tony-stark.netlify.app/",
+    live: "https://e-fcas.vercel.app/",
     figma: "",
     summary: (
       <p className="text-black">
@@ -445,6 +445,13 @@ export default [
         username: "Ameh Abraham",
         role: "Front-end developer",
         linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+      },
+      {
+        id: 2,
+        image: "/img/collaborators/samson-samuels.jpg",
+        username: "Samson Samuels",
+        role: "Full stack developer",
+        linkedin: "https://www.linkedin.com/in/sammieneutron/",
       },
     ],
   },
@@ -498,12 +505,11 @@ export default [
   },
   {
     id: 10,
-    mainimage: "/img/projects/willow-agency.png",
+    mainimage: "/img/projects/web/password.png",
     modal: "hs-password-generator",
     slider: [
-      "/img/projects/men-store.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
+      "/img/projects/web/password.png",
+      "/img/projects/web/password-active.png",
     ],
     title: "Password Generator",
     industry: "Security",
@@ -550,12 +556,11 @@ export default [
   },
   {
     id: 11,
-    mainimage: "/img/projects/women-store.png",
+    mainimage: "/img/projects/web/converter.png",
     modal: "hs-unit-converter",
     slider: [
-      "/img/projects/men-store.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
+      "/img/projects/web/converter.png",
+      "/img/projects/web/converter-active.png",
     ],
     title: "Unit Converter",
     industry: "Utility",
