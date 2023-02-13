@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FC } from "react";
 import AllWorks from "../general/AllWorks";
+import MobileWork from "../general/MobileWorks";
 
 const Projects: FC = () => {
   return (
@@ -63,13 +64,7 @@ const Projects: FC = () => {
             role="tabpanel"
             aria-labelledby="pills-with-brand-color-item-2"
           >
-            <p className="text-black dark:text-gray-400">
-              This is the{" "}
-              <em className="font-semibold text-gray-800 dark:text-gray-200">
-                second
-              </em>{" "}
-              item's tab body.
-            </p>
+            <MobileWork />
           </div>
         </div>
       </div>

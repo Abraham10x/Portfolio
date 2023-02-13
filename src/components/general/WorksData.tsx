@@ -342,9 +342,9 @@ export default [
     mainimage: "/img/projects/web/nogic.png",
     modal: "hs-nogic",
     slider: [
+      "/img/projects/web/nogic-jqs.png",
+      "/img/projects/web/nogic.png",
       "/img/projects/web/nogic-hero.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
     ],
     title: "NOGIC",
     industry: "Oil & Gas",
@@ -398,12 +398,12 @@ export default [
   },
   {
     id: 8,
-    mainimage: "/img/projects/men-store.png",
+    mainimage: "/img/projects/web/fcas.png",
     modal: "hs-fcas-project",
     slider: [
-      "/img/projects/men-store.png",
-      "/img/projects/women-store.png",
-      "/img/projects/willow-agency.png",
+      "/img/projects/web/fcas.png",
+      "/img/projects/web/fcas-note.png",
+      "/img/projects/web/fcas-form.png",
     ],
     title: "FCAS",
     industry: "Law",
