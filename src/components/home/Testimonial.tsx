@@ -31,7 +31,10 @@ const Testimonial: FC = () => {
           // slidesPerGroup={3}
           // loop={true}
           // loopFillGroupWithBlank={true}
-          navigation={true}
+          navigation={{
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+          }}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -57,6 +60,8 @@ const Testimonial: FC = () => {
           modules={[Navigation, Pagination, Autoplay]}
           className="mySwiper relative"
         >
+          <div className="swiper-button-prev" />
+          <div className="swiper-button-next" />
           {TestimonialData.map((data) => (
             <SwiperSlide key={data.id}>
               <div className="p-8 border border-white bg-white h-[21.6rem] sm:h-[23.8rem] lg:h-[25rem] relative rounded-xl flex flex-col gap-6 mt-20 mx-5 sm:mx-1 xl:mx-3 2xl:mx-10">

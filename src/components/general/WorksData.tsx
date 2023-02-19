@@ -337,374 +337,126 @@ export default [
       },
     ],
   },
-  {
-    id: 7,
-    mainimage: "/img/projects/web/nogic.png",
-    modal: "hs-nogic",
-    slider: [
-      "/img/projects/web/nogic-jqs.png",
-      "/img/projects/web/nogic.png",
-      "/img/projects/web/nogic-hero.png",
-    ],
-    title: "NOGIC",
-    industry: "Oil & Gas",
-    github: "",
-    live: "https://nogicjqs-frontend.vercel.app/",
-    figma: "",
-    summary: (
-      <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
-      </p>
-    ),
-    tools: [
-      {
-        id: 1,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
-      },
-      {
-        id: 2,
-        image: "/img/tools/next.svg",
-        title: "Next",
-      },
-      {
-        id: 3,
-        image: "/img/tools/tailwind.svg",
-        title: "Tailwind",
-      },
-    ],
-    collaborators: [
-      {
-        id: 1,
-        image: "/img/abraham.png",
-        username: "Ameh Abraham",
-        role: "Front-end developer",
-        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
-      },
-      {
-        id: 2,
-        image: "/img/collaborators/samson-samuels.jpg",
-        username: "Samson Samuels",
-        role: "Full stack developer",
-        linkedin: "https://www.linkedin.com/in/sammieneutron/",
-      },
-    ],
-  },
-  {
-    id: 8,
-    mainimage: "/img/projects/web/fcas.png",
-    modal: "hs-fcas-project",
-    slider: [
-      "/img/projects/web/fcas.png",
-      "/img/projects/web/fcas-note.png",
-      "/img/projects/web/fcas-form.png",
-    ],
-    title: "FCAS",
-    industry: "Law",
-    github: "",
-    live: "https://e-fcas.vercel.app/",
-    figma: "",
-    summary: (
-      <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
-      </p>
-    ),
-    tools: [
-      {
-        id: 1,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
-      },
-      {
-        id: 2,
-        image: "/img/tools/next.svg",
-        title: "Next",
-      },
-      {
-        id: 3,
-        image: "/img/tools/tailwind.svg",
-        title: "Tailwind",
-      },
-    ],
-    collaborators: [
-      {
-        id: 1,
-        image: "/img/abraham.png",
-        username: "Ameh Abraham",
-        role: "Front-end developer",
-        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
-      },
-      {
-        id: 2,
-        image: "/img/collaborators/samson-samuels.jpg",
-        username: "Samson Samuels",
-        role: "Full stack developer",
-        linkedin: "https://www.linkedin.com/in/sammieneutron/",
-      },
-    ],
-  },
+  // {
+  //   id: 7,
+  //   mainimage: "/img/projects/web/nogic.png",
+  //   modal: "hs-nogic",
+  //   slider: [
+  //     "/img/projects/web/nogic-jqs.png",
+  //     "/img/projects/web/nogic.png",
+  //     "/img/projects/web/nogic-hero.png",
+  //   ],
+  //   title: "NOGIC",
+  //   industry: "Oil & Gas",
+  //   github: "",
+  //   live: "https://nogicjqs-frontend.vercel.app/",
+  //   figma: "",
+  //   summary: (
+  //     <p className="text-black">
+  //       Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
+  //       fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
+  //       quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
+  //       pellentesque tempus donec tellus vitae habitant mattis mi.
+  //       <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
+  //       aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
+  //       purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+  //     </p>
+  //   ),
+  //   tools: [
+  //     {
+  //       id: 1,
+  //       image: "/img/tools/javascript.svg",
+  //       title: "JavaScript",
+  //     },
+  //     {
+  //       id: 2,
+  //       image: "/img/tools/next.svg",
+  //       title: "Next",
+  //     },
+  //     {
+  //       id: 3,
+  //       image: "/img/tools/tailwind.svg",
+  //       title: "Tailwind",
+  //     },
+  //   ],
+  //   collaborators: [
+  //     {
+  //       id: 1,
+  //       image: "/img/abraham.png",
+  //       username: "Ameh Abraham",
+  //       role: "Front-end developer",
+  //       linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+  //     },
+  //     {
+  //       id: 2,
+  //       image: "/img/collaborators/samson-samuels.jpg",
+  //       username: "Samson Samuels",
+  //       role: "Full stack developer",
+  //       linkedin: "https://www.linkedin.com/in/sammieneutron/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 8,
+  //   mainimage: "/img/projects/web/fcas.png",
+  //   modal: "hs-fcas-project",
+  //   slider: [
+  //     "/img/projects/web/fcas.png",
+  //     "/img/projects/web/fcas-note.png",
+  //     "/img/projects/web/fcas-form.png",
+  //   ],
+  //   title: "FCAS",
+  //   industry: "Law",
+  //   github: "",
+  //   live: "https://e-fcas.vercel.app/",
+  //   figma: "",
+  //   summary: (
+  //     <p className="text-black">
+  //       Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
+  //       fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
+  //       quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
+  //       pellentesque tempus donec tellus vitae habitant mattis mi.
+  //       <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
+  //       aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
+  //       purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+  //     </p>
+  //   ),
+  //   tools: [
+  //     {
+  //       id: 1,
+  //       image: "/img/tools/javascript.svg",
+  //       title: "JavaScript",
+  //     },
+  //     {
+  //       id: 2,
+  //       image: "/img/tools/next.svg",
+  //       title: "Next",
+  //     },
+  //     {
+  //       id: 3,
+  //       image: "/img/tools/tailwind.svg",
+  //       title: "Tailwind",
+  //     },
+  //   ],
+  //   collaborators: [
+  //     {
+  //       id: 1,
+  //       image: "/img/abraham.png",
+  //       username: "Ameh Abraham",
+  //       role: "Front-end developer",
+  //       linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+  //     },
+  //     {
+  //       id: 2,
+  //       image: "/img/collaborators/samson-samuels.jpg",
+  //       username: "Samson Samuels",
+  //       role: "Full stack developer",
+  //       linkedin: "https://www.linkedin.com/in/sammieneutron/",
+  //     },
+  //   ],
+  // },
   {
     id: 9,
-    mainimage: "/img/projects/web/tip-calculator.jpg",
-    modal: "hs-tip-calculator",
-    slider: [
-      "/img/projects/web/tip-calculator.jpg",
-      "/img/projects/web/tip-active.jpg",
-      "/img/projects/web/tip-mobile.jpg",
-    ],
-    title: "Tip Calculator",
-    industry: "Finance",
-    github: "https://github.com/Abraham10x/Tip-Calculator",
-    live: "https://tony-stark.netlify.app/",
-    figma: "",
-    summary: (
-      <p className="text-black">
-        This challenge from <em>Front End Mentor</em> was to build out this tip
-        calculator app and get it looking as close to the design as possible.
-        <br />
-      </p>
-    ),
-    tools: [
-      {
-        id: 1,
-        image: "/img/tools/html.svg",
-        title: "HTML",
-      },
-      {
-        id: 2,
-        image: "/img/tools/css.svg",
-        title: "CSS",
-      },
-      {
-        id: 3,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
-      },
-    ],
-    collaborators: [
-      {
-        id: 1,
-        image: "/img/abraham.png",
-        username: "Ameh Abraham",
-        role: "Front-end developer",
-        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
-      },
-    ],
-  },
-  {
-    id: 10,
-    mainimage: "/img/projects/web/password.png",
-    modal: "hs-password-generator",
-    slider: [
-      "/img/projects/web/password.png",
-      "/img/projects/web/password-active.png",
-    ],
-    title: "Password Generator",
-    industry: "Security",
-    github: "https://github.com/Abraham10x/Random-Password-Generator",
-    live: "https://heroic-crepe-c52247.netlify.app/",
-    figma: "",
-    summary: (
-      <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
-      </p>
-    ),
-    tools: [
-      {
-        id: 1,
-        image: "/img/tools/html.svg",
-        title: "HTML",
-      },
-      {
-        id: 2,
-        image: "/img/tools/css.svg",
-        title: "CSS",
-      },
-      {
-        id: 3,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
-      },
-    ],
-    collaborators: [
-      {
-        id: 1,
-        image: "/img/abraham.png",
-        username: "Ameh Abraham",
-        role: "Front-end developer",
-        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
-      },
-    ],
-  },
-  {
-    id: 11,
-    mainimage: "/img/projects/web/converter.png",
-    modal: "hs-unit-converter",
-    slider: [
-      "/img/projects/web/converter.png",
-      "/img/projects/web/converter-active.png",
-    ],
-    title: "Unit Converter",
-    industry: "Utility",
-    github: "https://github.com/Abraham10x/Unit-Converter",
-    live: "https://gorgeous-gecko-0b6105.netlify.app/",
-    figma: "",
-    summary: (
-      <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
-      </p>
-    ),
-    tools: [
-      {
-        id: 1,
-        image: "/img/tools/html.svg",
-        title: "HTML",
-      },
-      {
-        id: 2,
-        image: "/img/tools/css.svg",
-        title: "CSS",
-      },
-      {
-        id: 3,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
-      },
-    ],
-    collaborators: [
-      {
-        id: 1,
-        image: "/img/abraham.png",
-        username: "Ameh Abraham",
-        role: "Front-end developer",
-        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
-      },
-    ],
-  },
-  {
-    id: 12,
-    mainimage: "/img/projects/web/invoice.png",
-    modal: "hs-invoice-generator",
-    slider: [
-      "/img/projects/web/invoice.png",
-      "/img/projects/web/invoice-price.png",
-      "/img/projects/web/invoice-email.png",
-    ],
-    title: "Invoice Generator",
-    industry: "Finance",
-    github: "https://github.com/Abraham10x/Invoice-Generator",
-    live: "https://remarkable-souffle-ec077b.netlify.app/",
-    figma: "",
-    summary: (
-      <p className="text-black">
-        This ia an invoice that generate price when button with specific items
-        are clicked on. Then the total price will be calculated at displayed to
-        the user. User can also delete an item from their list and sent the
-        invoice slip through email to anyone
-      </p>
-    ),
-    tools: [
-      {
-        id: 1,
-        image: "/img/tools/html.svg",
-        title: "HTML",
-      },
-      {
-        id: 2,
-        image: "/img/tools/css.svg",
-        title: "CSS",
-      },
-      {
-        id: 3,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
-      },
-    ],
-    collaborators: [
-      {
-        id: 1,
-        image: "/img/abraham.png",
-        username: "Ameh Abraham",
-        role: "Front-end developer",
-        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
-      },
-    ],
-  },
-  {
-    id: 13,
-    mainimage: "/img/projects/web/color-scheme.png",
-    modal: "hs-color-scheme-generator",
-    slider: [
-      "/img/projects/web/color-scheme.png",
-      "/img/projects/web/color-select.png",
-      "/img/projects/web/color.png",
-    ],
-    title: "Color Scheme Generator",
-    industry: "Utility",
-    github: "https://github.com/Abraham10x/Color-Scheme-Generator",
-    live: "https://boisterous-dasik-10084a.netlify.app/",
-    figma: "",
-    summary: (
-      <p className="text-black">
-        here is a color scheme generator project with the to select a color from
-        the color input then choose the color scheme you want then click on the
-        get color button. which will activate the color scheme API. which will
-        generator 5 colors depending on you data.
-      </p>
-    ),
-    tools: [
-      {
-        id: 1,
-        image: "/img/tools/html.svg",
-        title: "HTML",
-      },
-      {
-        id: 2,
-        image: "/img/tools/css.svg",
-        title: "CSS",
-      },
-      {
-        id: 3,
-        image: "/img/tools/javascript.svg",
-        title: "JavaScript",
-      },
-    ],
-    collaborators: [
-      {
-        id: 1,
-        image: "/img/abraham.png",
-        username: "Ameh Abraham",
-        role: "Front-end developer",
-        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
-      },
-    ],
-  },
-  {
-    id: 14,
     mainimage: "/img/projects/web/tour9ja.png",
     modal: "hs-tour9ja-code",
     slider: [
@@ -755,6 +507,254 @@ export default [
         id: 5,
         image: "/img/tools/figma.svg",
         title: "Figma",
+      },
+    ],
+    collaborators: [
+      {
+        id: 1,
+        image: "/img/abraham.png",
+        username: "Ameh Abraham",
+        role: "Front-end developer",
+        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+      },
+    ],
+  },
+  {
+    id: 10,
+    mainimage: "/img/projects/web/tip-calculator.jpg",
+    modal: "hs-tip-calculator",
+    slider: [
+      "/img/projects/web/tip-calculator.jpg",
+      "/img/projects/web/tip-active.jpg",
+      "/img/projects/web/tip-mobile.jpg",
+    ],
+    title: "Tip Calculator",
+    industry: "Finance",
+    github: "https://github.com/Abraham10x/Tip-Calculator",
+    live: "https://tony-stark.netlify.app/",
+    figma: "",
+    summary: (
+      <p className="text-black">
+        This challenge from <em>Front End Mentor</em> was to build out this tip
+        calculator app and get it looking as close to the design as possible.
+        <br />
+      </p>
+    ),
+    tools: [
+      {
+        id: 1,
+        image: "/img/tools/html.svg",
+        title: "HTML",
+      },
+      {
+        id: 2,
+        image: "/img/tools/css.svg",
+        title: "CSS",
+      },
+      {
+        id: 3,
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
+      },
+    ],
+    collaborators: [
+      {
+        id: 1,
+        image: "/img/abraham.png",
+        username: "Ameh Abraham",
+        role: "Front-end developer",
+        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+      },
+    ],
+  },
+  {
+    id: 11,
+    mainimage: "/img/projects/web/password.png",
+    modal: "hs-password-generator",
+    slider: [
+      "/img/projects/web/password.png",
+      "/img/projects/web/password-active.png",
+    ],
+    title: "Password Generator",
+    industry: "Security",
+    github: "https://github.com/Abraham10x/Random-Password-Generator",
+    live: "https://heroic-crepe-c52247.netlify.app/",
+    figma: "",
+    summary: (
+      <p className="text-black">
+        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
+        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
+        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
+        pellentesque tempus donec tellus vitae habitant mattis mi.
+        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
+        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
+        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+      </p>
+    ),
+    tools: [
+      {
+        id: 1,
+        image: "/img/tools/html.svg",
+        title: "HTML",
+      },
+      {
+        id: 2,
+        image: "/img/tools/css.svg",
+        title: "CSS",
+      },
+      {
+        id: 3,
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
+      },
+    ],
+    collaborators: [
+      {
+        id: 1,
+        image: "/img/abraham.png",
+        username: "Ameh Abraham",
+        role: "Front-end developer",
+        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+      },
+    ],
+  },
+  {
+    id: 12,
+    mainimage: "/img/projects/web/converter.png",
+    modal: "hs-unit-converter",
+    slider: [
+      "/img/projects/web/converter.png",
+      "/img/projects/web/converter-active.png",
+    ],
+    title: "Unit Converter",
+    industry: "Utility",
+    github: "https://github.com/Abraham10x/Unit-Converter",
+    live: "https://gorgeous-gecko-0b6105.netlify.app/",
+    figma: "",
+    summary: (
+      <p className="text-black">
+        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
+        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
+        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
+        pellentesque tempus donec tellus vitae habitant mattis mi.
+        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
+        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
+        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
+      </p>
+    ),
+    tools: [
+      {
+        id: 1,
+        image: "/img/tools/html.svg",
+        title: "HTML",
+      },
+      {
+        id: 2,
+        image: "/img/tools/css.svg",
+        title: "CSS",
+      },
+      {
+        id: 3,
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
+      },
+    ],
+    collaborators: [
+      {
+        id: 1,
+        image: "/img/abraham.png",
+        username: "Ameh Abraham",
+        role: "Front-end developer",
+        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+      },
+    ],
+  },
+  {
+    id: 13,
+    mainimage: "/img/projects/web/invoice.png",
+    modal: "hs-invoice-generator",
+    slider: [
+      "/img/projects/web/invoice.png",
+      "/img/projects/web/invoice-price.png",
+      "/img/projects/web/invoice-email.png",
+    ],
+    title: "Invoice Generator",
+    industry: "Finance",
+    github: "https://github.com/Abraham10x/Invoice-Generator",
+    live: "https://remarkable-souffle-ec077b.netlify.app/",
+    figma: "",
+    summary: (
+      <p className="text-black">
+        This ia an invoice that generate price when button with specific items
+        are clicked on. Then the total price will be calculated at displayed to
+        the user. User can also delete an item from their list and sent the
+        invoice slip through email to anyone
+      </p>
+    ),
+    tools: [
+      {
+        id: 1,
+        image: "/img/tools/html.svg",
+        title: "HTML",
+      },
+      {
+        id: 2,
+        image: "/img/tools/css.svg",
+        title: "CSS",
+      },
+      {
+        id: 3,
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
+      },
+    ],
+    collaborators: [
+      {
+        id: 1,
+        image: "/img/abraham.png",
+        username: "Ameh Abraham",
+        role: "Front-end developer",
+        linkedin: "https://www.linkedin.com/in/ameh-abraham-2553951bb/",
+      },
+    ],
+  },
+  {
+    id: 14,
+    mainimage: "/img/projects/web/color-scheme.png",
+    modal: "hs-color-scheme-generator",
+    slider: [
+      "/img/projects/web/color-scheme.png",
+      "/img/projects/web/color-select.png",
+      "/img/projects/web/color.png",
+    ],
+    title: "Color Scheme Generator",
+    industry: "Utility",
+    github: "https://github.com/Abraham10x/Color-Scheme-Generator",
+    live: "https://boisterous-dasik-10084a.netlify.app/",
+    figma: "",
+    summary: (
+      <p className="text-black">
+        here is a color scheme generator project with the to select a color from
+        the color input then choose the color scheme you want then click on the
+        get color button. which will activate the color scheme API. which will
+        generator 5 colors depending on you data.
+      </p>
+    ),
+    tools: [
+      {
+        id: 1,
+        image: "/img/tools/html.svg",
+        title: "HTML",
+      },
+      {
+        id: 2,
+        image: "/img/tools/css.svg",
+        title: "CSS",
+      },
+      {
+        id: 3,
+        image: "/img/tools/javascript.svg",
+        title: "JavaScript",
       },
     ],
     collaborators: [
