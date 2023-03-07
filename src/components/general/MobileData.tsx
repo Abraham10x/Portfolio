@@ -12,7 +12,7 @@ export default [
     ],
     title: "Done With It",
     industry: "E-commerce",
-    github: "",
+    github: "https://github.com/Abraham10x/DoneWithIt.git",
     live: "",
     figma: "",
     summary: (
