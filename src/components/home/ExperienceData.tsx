@@ -6,67 +6,70 @@ export default [
     position: "Front-End Engineer",
     date: "Jul 2022 - Present",
     roles: [
-      `Maintain and improve website
-        Design mobile-based features`,
+      `Created & optimized a web-based party planning solution resulting in 2K+ active users in the first year & 89% customer satisfaction.`,
       `Collaborate with back-end developers and web designers to improve usability`,
-      `Worked on a web-based party planning solution that serves thousands of users across the country.`,
+      `Developed modular UI components to improve website speed by 70%, boosting user engagement by 73%.`,
     ],
   },
   {
     id: 2,
-    company: "Jeliz",
-    position: "Tech Instructor",
-    date: "Apr 2021 - Jul 2022",
+    company: "Upwork",
+    position: "Full Stack Engineer",
+    date: "Feb 2022 - Present",
     roles: [
-      `One on one coding section with kids of different age groups`,
-      `IN charge of designing and restructured an interactive educative platform`,
-      `Coding instructor of an online academy`,
+      `Collaborated with 23 clients weekly to deliver on-demand technical resource support and new design capabilities, boosting customer satisfaction by 40%.`,
+      `Designed and developed applications utilizing React, JavaScript, Tailwind TypeScript, Redux, etc.`,
+      `Provided expertise on emerging front-end technologies, enabling seamless integration of 50+ user interfaces for all platforms, resulting in 20% reduced development cycles..`,
     ],
   },
   {
     id: 3,
-    company: "Baun",
-    position: "Engineer",
-    date: "Sep 2020 - Jan 2021",
+    company: "Jeliz",
+    position: "Tech Instructor",
+    date: "Apr 2021 - Jul 2022",
     roles: [
-      `I was in charge of the Educational TV series for teaching 
-      robotics to kids i was the lead instructor and video editor.`,
-      `Developed real-time interactive digital library for various 
-      students in Nigeria where students were able to access a various 
-      content without the use of internet.`,
+      `Enabled 10+ students to express creativity through their projects, resulting in a 70% increase in successfully built prototypes.`,
+      `Crafted & delivered personalized lesson plans to extend understanding of coding fundamentals to 15+ students, promoting comprehension & increasing engagement by 30%.`,
     ],
   },
   {
     id: 4,
-    company: "Mindframe",
-    position: "Tech Instructor",
-    date: "May 2019 - Jun 2020",
+    company: "Baun",
+    position: "Engineer",
+    date: "Sep 2020 - Jan 2021",
     roles: [
-      `I was involvement in various tech training programs for 
-        schools in preparation for TECH GAP Competition`,
-      `maintained system architecture of various web based products`,
+      `Created a real-time digital library with access to over 10,000 topical content pieces for students across Nigeria, granting offline access to educational materials.`,
+      `Architected architecture that supported system scalability and stability, resulting in a 90% success rate of requests over 200 outlets.`,
     ],
   },
   {
     id: 5,
-    company: "Smart Kids",
+    company: "Mindframe",
     position: "Tech Instructor",
-    date: "Aug 2018 - Aug 2020",
+    date: "May 2019 - Jun 2020",
     roles: [
-      `Write modern, performant, maintainable code for a diverse array of client and internal projects`,
-      `Write modern, performant, maintainable code for a diverse array of client and internal projects`,
-      `Write modern, performant, maintainable code for a diverse array of client and internal projects`,
+      `Instructed 20 remote workshops to 10 local school districts, increasing academic preparedness for rising TECH GAP competition by 80%.`,
+      `Delivered interactive web development sessions for 32 school groups, teaching 200+ students across 10 states the fundamentals of modern JavaScript & HTML coding.`,
     ],
   },
   {
     id: 6,
+    company: "Smart Kids",
+    position: "Tech Instructor",
+    date: "Aug 2018 - Aug 2020",
+    roles: [
+      `Facilitated 5-person coding sections for students of ages 8-17, providing individualized instruction in HTML/CSS, JavaScript, Figma etc.`,
+      `Cultivated mutual partnerships with Nigerian organizations and colleges, driving up mentor participation by 15%.`,
+    ],
+  },
+  {
+    id: 7,
     company: "SAGE Nigeria",
     position: "Mentor",
     date: "Feb 2017 - Aug 2020",
     roles: [
-      `Trained SAGE Mentor working with various Schools across Nigeria.`,
-      `Organized training programs in schools on Arduino and entrepreneurship `,
-      `developed various (Prototype) project for School completions.`,
+      `Championed 2Xs SAGE Nigeria Mentor of the Year award with successful conception and development of several innovative programs within 85 schools.`,
+      `Trained 200+ teachers on the latest engineering and software techniques for STEM-based projects to improve teaching standards, leading to increased teacher engagement by 20%.`,
     ],
   },
 ];

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { FC } from "react";
 import Form from "@/components/general/Form";
+import Link from "next/link";
 
 const Contact: FC = () => {
   return (
@@ -26,11 +27,15 @@ const Contact: FC = () => {
                 width={60}
                 height={60}
               />
-              <p className="text-secondary text-base sm:text-lg lg:text-2xl my-auto">
-                +234 903 450 9153
-              </p>
+              <Link href="tel:+2349034509143" legacyBehavior>
+                <a className="my-auto h-full">
+                  <p className="text-secondary text-base sm:text-lg lg:text-2xl my-auto">
+                    +234 903 450 9153
+                  </p>
+                </a>
+              </Link>
             </div>
-            <div className="flex flex-row gap-5 sm:gap-8 lg:gap-10 mt-5 sm:mt-10 lg:mt-20">
+            <div className="flex flex-row gap-5 sm:gap-8 lg:gap-10 mt-5 sm:mt-10 lg:mt-20 align-middle">
               <Image
                 className="w-10 h-10 sm:w-14 sm:h-14"
                 src="/img/mail-icon.svg"
@@ -38,9 +43,13 @@ const Contact: FC = () => {
                 width={60}
                 height={60}
               />
-              <p className="text-secondary text-base sm:text-lg lg:text-2xl break-all my-auto">
-                amehabraham811@gmail.com
-              </p>
+              <Link href="mailto:amehabraham811@gmail.com" legacyBehavior>
+                <a className="my-auto h-full">
+                  <p className="text-secondary text-base sm:text-lg lg:text-2xl break-all">
+                    amehabraham811@gmail.com
+                  </p>
+                </a>
+              </Link>
             </div>
             <div className="flex flex-row gap-5 sm:gap-8 lg:gap-10 mt-5 sm:mt-10 lg:mt-20">
               <Image
