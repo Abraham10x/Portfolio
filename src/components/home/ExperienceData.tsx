@@ -13,6 +13,19 @@ export default [
   },
   {
     id: 2,
+    company: "Aberdeen",
+    position: "Front-End Engineer",
+    date: "Mar 2023 - May 2023",
+    roles: [
+      `Developed and implemented a user-friendly dashboard for Contract Administration System, Using Next.js, 
+       TypeScript, Tailwind, React Query, etc. resulting in a 30% increase in user adoption and a 20% reduction in contract 
+       processing time.`,
+      `Worked closely with product managers to gather and analyze user feedback data, informing successful UI/UX 
+       redesigns that increased customer engagement by 30%.`,
+    ],
+  },
+  {
+    id: 3,
     company: "Upwork",
     position: "Full Stack Engineer",
     date: "Feb 2022 - Present",
@@ -23,7 +36,7 @@ export default [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: "Jeliz",
     position: "Tech Instructor",
     date: "Apr 2021 - Jul 2022",
@@ -33,7 +46,7 @@ export default [
     ],
   },
   {
-    id: 4,
+    id: 5,
     company: "Baun",
     position: "Engineer",
     date: "Sep 2020 - Jan 2021",
@@ -43,7 +56,7 @@ export default [
     ],
   },
   {
-    id: 5,
+    id: 6,
     company: "Mindframe",
     position: "Tech Instructor",
     date: "May 2019 - Jun 2020",
@@ -52,16 +65,16 @@ export default [
       `Delivered interactive web development sessions for 32 school groups, teaching 200+ students across 10 states the fundamentals of modern JavaScript & HTML coding.`,
     ],
   },
-  {
-    id: 6,
-    company: "Smart Kids",
-    position: "Tech Instructor",
-    date: "Aug 2018 - Aug 2020",
-    roles: [
-      `Facilitated 5-person coding sections for students of ages 8-17, providing individualized instruction in HTML/CSS, JavaScript, Figma etc.`,
-      `Cultivated mutual partnerships with Nigerian organizations and colleges, driving up mentor participation by 15%.`,
-    ],
-  },
+  // {
+  //   id: 7,
+  //   company: "Smart Kids",
+  //   position: "Tech Instructor",
+  //   date: "Aug 2018 - Aug 2020",
+  //   roles: [
+  //     `Facilitated 5-person coding sections for students of ages 8-17, providing individualized instruction in HTML/CSS, JavaScript, Figma etc.`,
+  //     `Cultivated mutual partnerships with Nigerian organizations and colleges, driving up mentor participation by 15%.`,
+  //   ],
+  // },
   {
     id: 7,
     company: "SAGE Nigeria",
