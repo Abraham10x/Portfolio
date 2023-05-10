@@ -14,9 +14,9 @@ const Testimonial: FC = () => {
     <div className="mt-8 bg-primary-light">
       <div className="container px-5 sm:px-10 mx-auto py-20 lg:py-36">
         <h3 className="text-black capitalize text-left font-bold text-3xl sm:text-4xl lg:text-5xl">
-          what my clients{" "}
+          Referral From{" "}
           <span className="text-secondary font-sans capitalize font-medium">
-            say
+            Colleagues
           </span>
         </h3>
         <p className="text-black capitalize text-base w-full sm:w-4/5 lg:w-[40%] sm:text-xl lg:text-2xl mt-4 text-left">

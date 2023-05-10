@@ -2,9 +2,9 @@ import Link from "next/link";
 import { FC } from "react";
 import {
   RiLinkedinBoxFill,
-  RiFacebookCircleFill,
   RiTwitterFill,
   RiGithubFill,
+  RiMailFill,
 } from "react-icons/ri";
 
 const SocialIcons: FC = () => {
@@ -40,12 +40,8 @@ const SocialIcons: FC = () => {
           className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"
         />
       </Link>
-      <Link
-        href="https://web.facebook.com/abraham.ameh.39/"
-        rel="noreferer noopener"
-        target="_blank"
-      >
-        <RiFacebookCircleFill
+      <Link href="mailto:amehabraham811@gmail.com">
+        <RiMailFill
           size={50}
           className="p-2 border-secondary text-secondary border rounded-full hover:scale-110 hover:-translate-y-2 transition-all delay-150 duration-300 ease-in-out"
         />
