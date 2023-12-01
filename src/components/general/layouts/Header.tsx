@@ -77,7 +77,7 @@ const Header: FC = () => {
           <li className="lg:ml-0 xl:ml-8 text-xl md:my-8 sm:my-0 my-7 font-semibold font-sans">
             <Link
               legacyBehavior
-              href="/resume/resume.pdf"
+              href="/resume.pdf"
               className="xl:mx-8 xl:ml-36"
             >
               <a

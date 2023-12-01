@@ -2,20 +2,32 @@
 export default [
   {
     id: 1,
-    company: "Hashtag",
+    company: "Founder's Lab",
     position: "Front-End Engineer",
-    date: "Jul 2022 - Present",
+    date: "Aug 2023 - Present",
     roles: [
-      `Created & optimized a web-based party planning solution resulting in 2K+ active users in the first year & 89% customer satisfaction.`,
-      `Collaborate with back-end developers and web designers to improve usability`,
-      `Developed modular UI components to improve website speed by 70%, boosting user engagement by 73%.`,
+      `Collaborated with a cross-functional team of designers and backend developers to deliver a high-quality 
+      mobile application within a tight deadline, resulting in a 15% increase in user engagement.`,
+      `Utilized data-driven decision-making to optimize app performance, resulting in a 10% decrease in app 
+      crashes and an improved overall user rating of 4.5 stars out of 5.`,
     ],
   },
   {
     id: 2,
+    company: "StableDoc",
+    position: "Front-End Engineer",
+    date: "Dec 2022 - Present",
+    roles: [
+      `Worked closely with designers to ensure visually appealing designs that met business requirements.`,
+      `Implemented responsive design principles, resulting in improved mobile user experience and increased traffic.`,
+      `Designed and developed user interfaces of web applications, utilizing React, Next, and TypeScript.`,
+    ],
+  },
+  {
+    id: 3,
     company: "Aberdeen",
     position: "Front-End Engineer",
-    date: "Mar 2023 - May 2023",
+    date: "Mar 2023 - Sep 2023",
     roles: [
       `Developed and implemented a user-friendly dashboard for Contract Administration System, Using Next.js, 
        TypeScript, Tailwind, React Query, etc. resulting in a 30% increase in user adoption and a 20% reduction in contract 
@@ -25,7 +37,18 @@ export default [
     ],
   },
   {
-    id: 3,
+    id: 4,
+    company: "Hashtag",
+    position: "Front-End Engineer",
+    date: "Jul 2022 -  Jun 2023",
+    roles: [
+      `Created & optimized a web-based party planning solution resulting in 2K+ active users in the first year & 89% customer satisfaction.`,
+      `Collaborate with back-end developers and web designers to improve usability`,
+      `Developed modular UI components to improve website speed by 70%, boosting user engagement by 73%.`,
+    ],
+  },
+  {
+    id: 5,
     company: "Upwork",
     position: "Full Stack Engineer",
     date: "Feb 2022 - Present",
@@ -36,7 +59,7 @@ export default [
     ],
   },
   {
-    id: 4,
+    id: 6,
     company: "Jeliz",
     position: "Tech Instructor",
     date: "Apr 2021 - Jul 2022",
@@ -46,7 +69,7 @@ export default [
     ],
   },
   {
-    id: 5,
+    id: 7,
     company: "Baun",
     position: "Engineer",
     date: "Sep 2020 - Jan 2021",
@@ -56,7 +79,7 @@ export default [
     ],
   },
   {
-    id: 6,
+    id: 8,
     company: "Mindframe",
     position: "Tech Instructor",
     date: "May 2019 - Jun 2020",
@@ -76,7 +99,7 @@ export default [
   //   ],
   // },
   {
-    id: 7,
+    id: 9,
     company: "SAGE Nigeria",
     position: "Mentor",
     date: "Feb 2017 - Aug 2020",
