@@ -4,6 +4,59 @@ import React from "react";
 
 export default [
   {
+    id: 7,
+    mainimage: "/img/projects/web/fcas.png",
+    modal: "hs-fcas-project",
+    slider: [
+      "/img/projects/web/fcas.png",
+      "/img/projects/web/fcas-note.png",
+      "/img/projects/web/fcas-form.png",
+    ],
+    title: "FCAS",
+    industry: "Law",
+    github: "",
+    live: "https://efcas.ng/",
+    figma: "",
+    summary: (
+      <p className="text-black">
+        Federal Contracts Administration System The objective of the FCAS
+        Framework is to establish a seamless contract administration process for
+        all federal government contracts that will achieve the best possible
+        value for money with due regard to integrity,documentation, efficiency,
+        speed, performance and regulatory compliance.
+        <br /> In contracting, the kind of contractor poses a lot of risk to the
+        contract process. Therefore, it is of paramount importance that the
+        contractor is reviewed before choosing.
+      </p>
+    ),
+    tools: [
+      {
+        id: 1,
+        image: "/img/tools/typeScript.svg",
+        title: "TypeScript",
+      },
+      {
+        id: 2,
+        image: "/img/tools/next.svg",
+        title: "Next",
+      },
+      {
+        id: 3,
+        image: "/img/tools/tailwind.svg",
+        title: "Tailwind",
+      },
+    ],
+    collaborators: [
+      {
+        id: 1,
+        image: "/img/collaborators/aberdeen.jpeg",
+        username: "Aberdeen",
+        role: "Energy Solutions",
+        linkedin: "https://aberdeencommercial.com",
+      },
+    ],
+  },
+  {
     id: 1,
     mainimage: "/img/projects/web/hashtag.png",
     modal: "hs-hastag-website",
@@ -396,58 +449,6 @@ export default [
   //     },
   //   ],
   // },
-  {
-    id: 7,
-    mainimage: "/img/projects/web/fcas.png",
-    modal: "hs-fcas-project",
-    slider: [
-      "/img/projects/web/fcas.png",
-      "/img/projects/web/fcas-note.png",
-      "/img/projects/web/fcas-form.png",
-    ],
-    title: "FCAS",
-    industry: "Law",
-    github: "",
-    live: "https://e-fcas.vercel.app/",
-    figma: "",
-    summary: (
-      <p className="text-black">
-        Lorem ipsum dolor sit amet consectetur. Vulputate nunc feugiat ut purus
-        fringilla orci in ac est. Laoreet tempor malesuada sit arcu dignissim
-        quam. Vel volutpat pulvinar at sagittis ipsum dolor. Nibh donec
-        pellentesque tempus donec tellus vitae habitant mattis mi.
-        <br /> Sapien ut et non morbi. Nibh porta est ultrices habitant aliquam
-        aliquam eget aliquet. At faucibus nisi quis interdum urna habitasse
-        purus turpis sed. Vitae nec ut suspendisse maecenas laoreet sit.
-      </p>
-    ),
-    tools: [
-      {
-        id: 1,
-        image: "/img/tools/typeScript.svg",
-        title: "TypeScript",
-      },
-      {
-        id: 2,
-        image: "/img/tools/next.svg",
-        title: "Next",
-      },
-      {
-        id: 3,
-        image: "/img/tools/tailwind.svg",
-        title: "Tailwind",
-      },
-    ],
-    collaborators: [
-      {
-        id: 1,
-        image: "/img/collaborators/aberdeen.jpeg",
-        username: "Aberdeen",
-        role: "Energy Solutions",
-        linkedin: "https://aberdeencommercial.com",
-      },
-    ],
-  },
   {
     id: 8,
     mainimage: "/img/projects/web/tour9ja.png",
