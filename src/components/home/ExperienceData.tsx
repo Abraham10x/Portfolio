@@ -2,18 +2,6 @@
 export default [
   {
     id: 1,
-    company: "Founder's Lab",
-    position: "Front-End Engineer",
-    date: "Aug 2023 - Present",
-    roles: [
-      `Collaborated with a cross-functional team of designers and backend developers to deliver a high-quality 
-      mobile application within a tight deadline, resulting in a 15% increase in user engagement.`,
-      `Utilized data-driven decision-making to optimize app performance, resulting in a 10% decrease in app 
-      crashes and an improved overall user rating of 4.5 stars out of 5.`,
-    ],
-  },
-  {
-    id: 2,
     company: "StableDoc",
     position: "Front-End Engineer",
     date: "Dec 2022 - Present",
@@ -21,6 +9,18 @@ export default [
       `Worked closely with designers to ensure visually appealing designs that met business requirements.`,
       `Implemented responsive design principles, resulting in improved mobile user experience and increased traffic.`,
       `Designed and developed user interfaces of web applications, utilizing React, Next, and TypeScript.`,
+    ],
+  },
+  {
+    id: 2,
+    company: "TFL",
+    position: "Front-End Engineer",
+    date: "Aug 2023 - Jan 2024",
+    roles: [
+      `Collaborated with a cross-functional team of designers and backend developers to deliver a high-quality 
+      mobile application within a tight deadline, resulting in a 15% increase in user engagement.`,
+      `Utilized data-driven decision-making to optimize app performance, resulting in a 10% decrease in app 
+      crashes and an improved overall user rating of 4.5 stars out of 5.`,
     ],
   },
   {
