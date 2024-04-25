@@ -87,6 +87,32 @@ const MobileWork: FC = () => {
                           </a>
                         </Link>
                       )}
+                      {data.playstore && (
+                        <Link legacyBehavior href={data.playstore}>
+                          <a target="_blank" rel="noopener noreferrer">
+                            <Image
+                              className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                              src="/img/playstore.svg"
+                              alt="icon"
+                              width={40}
+                              height={40}
+                            />
+                          </a>
+                        </Link>
+                      )}
+                      {data.applestore && (
+                        <Link legacyBehavior href={data.applestore}>
+                          <a target="_blank" rel="noopener noreferrer">
+                            <Image
+                              className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                              src="/img/apple.svg"
+                              alt="icon"
+                              width={40}
+                              height={40}
+                            />
+                          </a>
+                        </Link>
+                      )}
                     </div>
                   </div>
                   <div className="flex flex-row gap-4 px-3">
@@ -215,6 +241,32 @@ const MobileWork: FC = () => {
                                 </a>
                               </Link>
                             )}
+                            {data.playstore && (
+                              <Link legacyBehavior href={data.playstore}>
+                                <a target="_blank" rel="noopener noreferrer">
+                                  <Image
+                                    className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                                    src="/img/playstore.svg"
+                                    alt="icon"
+                                    width={40}
+                                    height={40}
+                                  />
+                                </a>
+                              </Link>
+                            )}
+                            {data.applestore && (
+                              <Link legacyBehavior href={data.applestore}>
+                                <a target="_blank" rel="noopener noreferrer">
+                                  <Image
+                                    className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                                    src="/img/apple.svg"
+                                    alt="icon"
+                                    width={40}
+                                    height={40}
+                                  />
+                                </a>
+                              </Link>
+                            )}
                             {data.live && (
                               <Link legacyBehavior href={data.live}>
                                 <a target="_blank" rel="noopener noreferrer">
@@ -296,6 +348,32 @@ const MobileWork: FC = () => {
                     </div>
                   </div>
                   <div className="hs-dropdown-toggle flex justify-end mt-5 items-center gap-x-2 py-5 px-5 sm:px-10 border-t border-gray-300">
+                    {data.playstore && (
+                      <Link legacyBehavior href={data.playstore}>
+                        <a target="_blank" rel="noopener noreferrer">
+                          <Image
+                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                            src="/img/playstore.svg"
+                            alt="icon"
+                            width={40}
+                            height={40}
+                          />
+                        </a>
+                      </Link>
+                    )}
+                    {data.applestore && (
+                      <Link legacyBehavior href={data.applestore}>
+                        <a target="_blank" rel="noopener noreferrer">
+                          <Image
+                            className="hover:scale-110 hover:-translate-y-1 transition-all delay-150 duration-300 ease-in-out"
+                            src="/img/apple.svg"
+                            alt="icon"
+                            width={40}
+                            height={40}
+                          />
+                        </a>
+                      </Link>
+                    )}
                     {data.live ? (
                       <a
                         className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent hover:scale-110 hover:-translate-y-1 delay-150 duration-300 ease-in-out font-semibold bg-secondary text-white hover:bg-secondary/80 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 transition-all text-sm0"
