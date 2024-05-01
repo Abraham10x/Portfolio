@@ -53,7 +53,8 @@ export default [
     live: "https://app.kawa.ng",
     figma: "",
     playstore: "https://play.google.com/store/apps/details?id=ng.kawa.app",
-    applestore: "",
+    applestore:
+      "https://apps.apple.com/us/app/kawa-last-mile-delivery/id6473756839",
     summary: (
       <p className="text-black">
         From the convenience of your own device, you will be able to keep
