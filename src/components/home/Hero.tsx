@@ -92,14 +92,14 @@ const Hero: FC = () => {
           <div className="flex flex-row gap-x-2">
             <hr className="w-20 mt-4 h-1 border bg-black hidden sm:inline-block" />
             <h3 className="text-black capitalize text-left font-bold text-3xl sm:text-4xl lg:text-5xl">
-              Featured{" "}
+              Recent{" "}
               <span className="text-secondary font-sans capitalize font-bold">
                 {" "}
                 Project{" "}
               </span>
             </h3>
           </div>
-          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-evenly gap-x-10 gap-y-5 mt-10 lg:mt-0 text-black">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-evenly gap-x-10 gap-y-5 mt-10 lg:mt-0 text-black">
             <div className="flex flex-col gap-1">
               <h5 className="font-bold text-xl sm:text-2xl font-serif">50+</h5>
               <p className="text-xl sm:text-2xl">Projects Completed</p>
@@ -118,7 +118,7 @@ const Hero: FC = () => {
               </h5>
               <p className="text-xl sm:text-2xl">Satisfied clients</p>
             </div>
-          </div> */}
+          </div>
         </div>
         <RecentWork />
       </div>

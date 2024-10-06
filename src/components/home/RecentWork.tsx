@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
+import React, { FC } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
