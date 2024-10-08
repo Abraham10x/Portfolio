@@ -27,7 +27,7 @@ const Hero: FC = () => {
               projects from concept to launch.
             </p>
             <div className="flex sm:flex-row mt-8 gap-6">
-              <Link href="/resume/resume.pdf" legacyBehavior>
+              <Link href="/resume.pdf" legacyBehavior>
                 <a
                   rel="noreferer noopener"
                   target="_blank"
